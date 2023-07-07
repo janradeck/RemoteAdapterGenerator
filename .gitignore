@@ -1,0 +1,4 @@
+# Project exclude paths
+/languages/ClientCommands/classes_gen/
+/languages/ClientCommands/generator/classes_gen/
+/languages/ClientCommands/sandbox/classes_gen/

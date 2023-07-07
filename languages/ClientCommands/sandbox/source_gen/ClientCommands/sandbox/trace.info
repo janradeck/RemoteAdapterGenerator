@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:75fb25f4-a6a0-4281-952e-fd1b745661f9(ClientCommands.sandbox)/8863428079231414163">
+    <file name="SvgDrawerClient.java">
+      <node id="8863428079231414163" at="7,0,8,0" concept="2" trace="factory" />
+      <node id="8863428079231414163" at="8,58,9,27" concept="1" />
+      <node id="8863428079231636015" at="12,54,13,67" concept="4" />
+      <node id="8863428079231636026" at="13,67,14,43" concept="1" />
+      <node id="8863428079231636027" at="14,43,15,37" concept="1" />
+      <node id="8863428079231636015" at="15,37,16,28" concept="1" />
+      <node id="8863428079231636149" at="18,53,19,66" concept="4" />
+      <node id="8863428079231636160" at="19,66,20,43" concept="1" />
+      <node id="8863428079231636161" at="20,43,21,37" concept="1" />
+      <node id="8863428079231636149" at="21,37,22,28" concept="1" />
+      <node id="8863428079231636182" at="24,52,25,65" concept="4" />
+      <node id="8863428079231636200" at="25,65,26,43" concept="1" />
+      <node id="8863428079231636201" at="26,43,27,37" concept="1" />
+      <node id="8863428079231636182" at="27,37,28,28" concept="1" />
+      <node id="8863428079231636216" at="30,54,31,67" concept="4" />
+      <node id="8863428079231636241" at="31,67,32,43" concept="1" />
+      <node id="8863428079231636242" at="32,43,33,37" concept="1" />
+      <node id="8863428079231636216" at="33,37,34,28" concept="1" />
+      <node id="8863428079231636268" at="36,53,37,66" concept="4" />
+      <node id="8863428079231636300" at="37,66,38,43" concept="1" />
+      <node id="8863428079231636301" at="38,43,39,37" concept="1" />
+      <node id="8863428079231636268" at="39,37,40,28" concept="1" />
+      <node id="8863428079233967955" at="42,63,43,62" concept="4" />
+      <node id="8863428079233967996" at="43,62,44,43" concept="1" />
+      <node id="8863428079233967998" at="44,43,45,37" concept="1" />
+      <node id="8863428079233968001" at="45,37,46,39" concept="1" />
+      <node id="8863428079233967955" at="46,39,47,28" concept="1" />
+      <node id="8863428079231636316" at="49,23,50,63" concept="4" />
+      <node id="8863428079231636316" at="50,63,51,28" concept="1" />
+      <node id="8863428079231414163" at="8,0,11,0" concept="0" trace="SvgDrawerClient#(Lde/janradeck/svgclient/InjectionFactoryClient;)V" />
+      <node id="8863428079231636316" at="49,0,53,0" concept="3" trace="clear#()V" />
+      <node id="8863428079231636015" at="12,0,18,0" concept="3" trace="drawGreen#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8863428079231636149" at="18,0,24,0" concept="3" trace="drawBlue#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8863428079231636182" at="24,0,30,0" concept="3" trace="drawRed#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8863428079231636216" at="30,0,36,0" concept="3" trace="drawBlack#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8863428079231636268" at="36,0,42,0" concept="3" trace="drawGrey#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8863428079233967955" at="42,0,49,0" concept="3" trace="draw#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="8863428079231414163" at="8,58,9,27" />
+      <scope id="8863428079231636316" at="49,23,51,28">
+        <var name="query" id="8863428079231636316" />
+      </scope>
+      <scope id="8863428079231414163" at="8,0,11,0">
+        <var name="factory" id="8863428079231414163" />
+      </scope>
+      <scope id="8863428079231636015" at="12,54,16,28">
+        <var name="query" id="8863428079231636015" />
+      </scope>
+      <scope id="8863428079231636149" at="18,53,22,28">
+        <var name="query" id="8863428079231636149" />
+      </scope>
+      <scope id="8863428079231636182" at="24,52,28,28">
+        <var name="query" id="8863428079231636182" />
+      </scope>
+      <scope id="8863428079231636216" at="30,54,34,28">
+        <var name="query" id="8863428079231636216" />
+      </scope>
+      <scope id="8863428079231636268" at="36,53,40,28">
+        <var name="query" id="8863428079231636268" />
+      </scope>
+      <scope id="8863428079231636316" at="49,0,53,0" />
+      <scope id="8863428079233967955" at="42,63,47,28">
+        <var name="query" id="8863428079233967955" />
+      </scope>
+      <scope id="8863428079231636015" at="12,0,18,0">
+        <var name="message" id="8863428079231636026" />
+        <var name="path" id="8863428079231636027" />
+      </scope>
+      <scope id="8863428079231636149" at="18,0,24,0">
+        <var name="message" id="8863428079231636160" />
+        <var name="path" id="8863428079231636161" />
+      </scope>
+      <scope id="8863428079231636182" at="24,0,30,0">
+        <var name="message" id="8863428079231636200" />
+        <var name="path" id="8863428079231636201" />
+      </scope>
+      <scope id="8863428079231636216" at="30,0,36,0">
+        <var name="message" id="8863428079231636241" />
+        <var name="path" id="8863428079231636242" />
+      </scope>
+      <scope id="8863428079231636268" at="36,0,42,0">
+        <var name="message" id="8863428079231636300" />
+        <var name="path" id="8863428079231636301" />
+      </scope>
+      <scope id="8863428079233967955" at="42,0,49,0">
+        <var name="message" id="8863428079233967996" />
+        <var name="path" id="8863428079233967998" />
+        <var name="style" id="8863428079233968001" />
+      </scope>
+      <unit id="8863428079231414163" at="6,0,56,0" name="de.janradeck.svgclient.SvgDrawerClient" />
+    </file>
+    <file name="SvgDrawerServer.java">
+      <node id="8863428079231636020" at="7,0,8,0" concept="6" trace="styleGreen" />
+      <node id="8863428079231636021" at="8,0,9,0" concept="6" trace="styleBlue" />
+      <node id="8863428079231636022" at="9,0,10,0" concept="6" trace="styleRed" />
+      <node id="8863428079231636245" at="10,0,11,0" concept="6" trace="styleBlack" />
+      <node id="8863428079231636250" at="11,0,12,0" concept="6" trace="styleGrey" />
+      <node id="8863428079231414163" at="13,0,14,0" concept="2" trace="server" />
+      <node id="8863428079231414163" at="15,86,16,33" concept="1" />
+      <node id="8863428079231636015" at="16,33,17,79" concept="1" />
+      <node id="8863428079231636149" at="17,79,18,77" concept="1" />
+      <node id="8863428079231636182" at="18,77,19,75" concept="1" />
+      <node id="8863428079231636216" at="19,75,20,79" concept="1" />
+      <node id="8863428079231636268" at="20,79,21,77" concept="1" />
+      <node id="8863428079233967955" at="21,77,22,69" concept="1" />
+      <node id="8863428079231636316" at="22,69,23,71" concept="1" />
+      <node id="8863428079231414163" at="23,71,24,73" concept="5" />
+      <node id="8863428079231414163" at="24,73,25,71" concept="1" />
+      <node id="8863428079231414163" at="25,71,26,19" concept="1" />
+      <node id="8863428079231414163" at="32,22,33,19" concept="1" />
+      <node id="8863428079231414163" at="38,81,39,33" concept="7" />
+      <node id="8863428079231414163" at="42,108,43,35" concept="1" />
+      <node id="8863428079231414163" at="43,35,44,48" concept="1" />
+      <node id="8863428079231414163" at="44,48,45,21" concept="1" />
+      <node id="8863428079231414163" at="45,21,46,26" concept="1" />
+      <node id="8863428079231636015" at="52,85,53,33" concept="7" />
+      <node id="8863428079231636015" at="55,84,56,49" concept="4" />
+      <node id="8863428079231636015" at="56,49,57,35" concept="1" />
+      <node id="8863428079231636015" at="57,35,58,36" concept="1" />
+      <node id="8863428079231636026" at="58,36,59,45" concept="4" />
+      <node id="8863428079231636027" at="59,45,60,39" concept="4" />
+      <node id="8863428079231636074" at="60,39,61,50" concept="1" />
+      <node id="8863428079231636149" at="66,84,67,33" concept="7" />
+      <node id="8863428079231636149" at="69,84,70,48" concept="4" />
+      <node id="8863428079231636149" at="70,48,71,35" concept="1" />
+      <node id="8863428079231636149" at="71,35,72,36" concept="1" />
+      <node id="8863428079231636160" at="72,36,73,45" concept="4" />
+      <node id="8863428079231636161" at="73,45,74,39" concept="4" />
+      <node id="8863428079231636164" at="74,39,75,49" concept="1" />
+      <node id="8863428079231636182" at="80,83,81,33" concept="7" />
+      <node id="8863428079231636182" at="83,84,84,47" concept="4" />
+      <node id="8863428079231636182" at="84,47,85,35" concept="1" />
+      <node id="8863428079231636182" at="85,35,86,36" concept="1" />
+      <node id="8863428079231636200" at="86,36,87,45" concept="4" />
+      <node id="8863428079231636201" at="87,45,88,39" concept="4" />
+      <node id="8863428079231636204" at="88,39,89,48" concept="1" />
+      <node id="8863428079231636216" at="94,85,95,33" concept="7" />
+      <node id="8863428079231636216" at="97,84,98,49" concept="4" />
+      <node id="8863428079231636216" at="98,49,99,35" concept="1" />
+      <node id="8863428079231636216" at="99,35,100,36" concept="1" />
+      <node id="8863428079231636241" at="100,36,101,45" concept="4" />
+      <node id="8863428079231636242" at="101,45,102,39" concept="4" />
+      <node id="8863428079231636256" at="102,39,103,50" concept="1" />
+      <node id="8863428079231636268" at="108,84,109,33" concept="7" />
+      <node id="8863428079231636268" at="111,84,112,48" concept="4" />
+      <node id="8863428079231636268" at="112,48,113,35" concept="1" />
+      <node id="8863428079231636268" at="113,35,114,36" concept="1" />
+      <node id="8863428079231636300" at="114,36,115,45" concept="4" />
+      <node id="8863428079231636301" at="115,45,116,39" concept="4" />
+      <node id="8863428079231636304" at="116,39,117,49" concept="1" />
+      <node id="8863428079233967955" at="122,80,123,33" concept="7" />
+      <node id="8863428079233967955" at="125,84,126,44" concept="4" />
+      <node id="8863428079233967955" at="126,44,127,35" concept="1" />
+      <node id="8863428079233967955" at="127,35,128,36" concept="1" />
+      <node id="8863428079233967996" at="128,36,129,45" concept="4" />
+      <node id="8863428079233967998" at="129,45,130,39" concept="4" />
+      <node id="8863428079233968001" at="130,39,131,41" concept="4" />
+      <node id="8863428079233968005" at="131,41,132,45" concept="1" />
+      <node id="8863428079231636316" at="137,81,138,33" concept="7" />
+      <node id="8863428079231636316" at="140,84,141,45" concept="4" />
+      <node id="8863428079231636316" at="141,45,142,35" concept="1" />
+      <node id="8863428079231636316" at="142,35,143,36" concept="1" />
+      <node id="8863428079231636357" at="143,36,144,32" concept="1" />
+      <node id="8863428079231414163" at="32,0,35,0" concept="3" trace="stop#()V" />
+      <node id="8863428079231414163" at="38,0,41,0" concept="0" trace="CloseHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636015" at="52,0,55,0" concept="0" trace="DrawGreenHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636149" at="66,0,69,0" concept="0" trace="DrawBlueHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636182" at="80,0,83,0" concept="0" trace="DrawRedHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636216" at="94,0,97,0" concept="0" trace="DrawBlackHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636268" at="108,0,111,0" concept="0" trace="DrawGreyHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079233967955" at="122,0,125,0" concept="0" trace="DrawHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231636316" at="137,0,140,0" concept="0" trace="ClearHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="8863428079231414163" at="42,0,48,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;Lde/janradeck/svghttpd/Parameters;Lde/janradeck/svghttpd/SvgApplication;)V" />
+      <node id="8863428079231636316" at="140,0,146,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231636015" at="55,0,63,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231636149" at="69,0,77,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231636182" at="83,0,91,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231636216" at="97,0,105,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231636268" at="111,0,119,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079233967955" at="125,0,134,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="8863428079231414163" at="15,0,28,0" concept="0" trace="SvgDrawerServer#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/InjectionFactoryServer;)V" />
+      <scope id="8863428079231414163" at="32,22,33,19" />
+      <scope id="8863428079231414163" at="38,81,39,33" />
+      <scope id="8863428079231636015" at="52,85,53,33" />
+      <scope id="8863428079231636149" at="66,84,67,33" />
+      <scope id="8863428079231636182" at="80,83,81,33" />
+      <scope id="8863428079231636216" at="94,85,95,33" />
+      <scope id="8863428079231636268" at="108,84,109,33" />
+      <scope id="8863428079233967955" at="122,80,123,33" />
+      <scope id="8863428079231636316" at="137,81,138,33" />
+      <scope id="8863428079231414163" at="32,0,35,0" />
+      <scope id="8863428079231414163" at="38,0,41,0">
+        <var name="application" id="8863428079231414163" />
+        <var name="server" id="8863428079231414163" />
+      </scope>
+      <scope id="8863428079231636015" at="52,0,55,0">
+        <var name="application" id="8863428079231636015" />
+        <var name="server" id="8863428079231636015" />
+      </scope>
+      <scope id="8863428079231636149" at="66,0,69,0">
+        <var name="application" id="8863428079231636149" />
+        <var name="server" id="8863428079231636149" />
+      </scope>
+      <scope id="8863428079231636182" at="80,0,83,0">
+        <var name="application" id="8863428079231636182" />
+        <var name="server" id="8863428079231636182" />
+      </scope>
+      <scope id="8863428079231636216" at="94,0,97,0">
+        <var name="application" id="8863428079231636216" />
+        <var name="server" id="8863428079231636216" />
+      </scope>
+      <scope id="8863428079231636268" at="108,0,111,0">
+        <var name="application" id="8863428079231636268" />
+        <var name="server" id="8863428079231636268" />
+      </scope>
+      <scope id="8863428079233967955" at="122,0,125,0">
+        <var name="application" id="8863428079233967955" />
+        <var name="server" id="8863428079233967955" />
+      </scope>
+      <scope id="8863428079231636316" at="137,0,140,0">
+        <var name="application" id="8863428079231636316" />
+        <var name="server" id="8863428079231636316" />
+      </scope>
+      <scope id="8863428079231414163" at="42,108,46,26" />
+      <scope id="8863428079231636316" at="140,84,144,32">
+        <var name="response" id="8863428079231636316" />
+      </scope>
+      <scope id="8863428079231414163" at="42,0,48,0">
+        <var name="application" id="8863428079231414163" />
+        <var name="communication" id="8863428079231414163" />
+        <var name="params" id="8863428079231414163" />
+      </scope>
+      <scope id="8863428079231636015" at="55,84,61,50">
+        <var name="message" id="8863428079231636026" />
+        <var name="path" id="8863428079231636027" />
+        <var name="response" id="8863428079231636015" />
+      </scope>
+      <scope id="8863428079231636149" at="69,84,75,49">
+        <var name="message" id="8863428079231636160" />
+        <var name="path" id="8863428079231636161" />
+        <var name="response" id="8863428079231636149" />
+      </scope>
+      <scope id="8863428079231636182" at="83,84,89,48">
+        <var name="message" id="8863428079231636200" />
+        <var name="path" id="8863428079231636201" />
+        <var name="response" id="8863428079231636182" />
+      </scope>
+      <scope id="8863428079231636216" at="97,84,103,50">
+        <var name="message" id="8863428079231636241" />
+        <var name="path" id="8863428079231636242" />
+        <var name="response" id="8863428079231636216" />
+      </scope>
+      <scope id="8863428079231636268" at="111,84,117,49">
+        <var name="message" id="8863428079231636300" />
+        <var name="path" id="8863428079231636301" />
+        <var name="response" id="8863428079231636268" />
+      </scope>
+      <scope id="8863428079231636316" at="140,0,146,0">
+        <var name="application" id="8863428079231636316" />
+        <var name="communication" id="8863428079231636316" />
+        <var name="params" id="8863428079231636316" />
+      </scope>
+      <scope id="8863428079233967955" at="125,84,132,45">
+        <var name="message" id="8863428079233967996" />
+        <var name="path" id="8863428079233967998" />
+        <var name="response" id="8863428079233967955" />
+        <var name="style" id="8863428079233968001" />
+      </scope>
+      <scope id="8863428079231636015" at="55,0,63,0">
+        <var name="application" id="8863428079231636015" />
+        <var name="communication" id="8863428079231636015" />
+        <var name="params" id="8863428079231636015" />
+      </scope>
+      <scope id="8863428079231636149" at="69,0,77,0">
+        <var name="application" id="8863428079231636149" />
+        <var name="communication" id="8863428079231636149" />
+        <var name="params" id="8863428079231636149" />
+      </scope>
+      <scope id="8863428079231636182" at="83,0,91,0">
+        <var name="application" id="8863428079231636182" />
+        <var name="communication" id="8863428079231636182" />
+        <var name="params" id="8863428079231636182" />
+      </scope>
+      <scope id="8863428079231636216" at="97,0,105,0">
+        <var name="application" id="8863428079231636216" />
+        <var name="communication" id="8863428079231636216" />
+        <var name="params" id="8863428079231636216" />
+      </scope>
+      <scope id="8863428079231636268" at="111,0,119,0">
+        <var name="application" id="8863428079231636268" />
+        <var name="communication" id="8863428079231636268" />
+        <var name="params" id="8863428079231636268" />
+      </scope>
+      <scope id="8863428079233967955" at="125,0,134,0">
+        <var name="application" id="8863428079233967955" />
+        <var name="communication" id="8863428079233967955" />
+        <var name="params" id="8863428079233967955" />
+      </scope>
+      <scope id="8863428079231414163" at="15,86,26,19" />
+      <scope id="8863428079231414163" at="15,0,28,0">
+        <var name="application" id="8863428079231414163" />
+        <var name="factory" id="8863428079231414163" />
+      </scope>
+      <unit id="8863428079231636316" at="136,0,148,0" name="de.janradeck.svghttpd.SvgDrawerServer$ClearHandler" />
+      <unit id="8863428079231414163" at="36,0,49,0" name="de.janradeck.svghttpd.SvgDrawerServer$CloseHandler" />
+      <unit id="8863428079231636015" at="51,0,65,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawGreenHandler" />
+      <unit id="8863428079231636149" at="65,0,79,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawBlueHandler" />
+      <unit id="8863428079231636182" at="79,0,93,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawRedHandler" />
+      <unit id="8863428079231636216" at="93,0,107,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawBlackHandler" />
+      <unit id="8863428079231636268" at="107,0,121,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawGreyHandler" />
+      <unit id="8863428079233967955" at="121,0,136,0" name="de.janradeck.svghttpd.SvgDrawerServer$DrawHandler" />
+      <unit id="8863428079231414163" at="6,0,151,0" name="de.janradeck.svghttpd.SvgDrawerServer" />
+    </file>
+  </root>
+  <root nodeRef="r:75fb25f4-a6a0-4281-952e-fd1b745661f9(ClientCommands.sandbox)/9205860399982338136">
+    <file name="testClient.java">
+      <node id="9205860399982338136" at="7,0,8,0" concept="2" trace="factory" />
+      <node id="9205860399982338136" at="8,53,9,27" concept="1" />
+      <node id="9205860399984452407" at="12,56,13,70" concept="4" />
+      <node id="9205860399984452408" at="13,70,14,43" concept="1" />
+      <node id="9205860399984452409" at="14,43,15,37" concept="1" />
+      <node id="9205860399984452407" at="15,37,16,28" concept="1" />
+      <node id="9205860399984452414" at="18,56,19,70" concept="4" />
+      <node id="9205860399984452416" at="19,70,20,43" concept="1" />
+      <node id="9205860399984452417" at="20,43,21,37" concept="1" />
+      <node id="9205860399984452414" at="21,37,22,28" concept="1" />
+      <node id="9205860399984452422" at="24,25,25,66" concept="4" />
+      <node id="9205860399984452422" at="25,66,26,28" concept="1" />
+      <node id="9205860399984452424" at="28,28,29,69" concept="4" />
+      <node id="9205860399984452424" at="29,69,30,28" concept="1" />
+      <node id="9205860399986164533" at="32,30,33,71" concept="4" />
+      <node id="9205860399986164533" at="33,71,34,28" concept="1" />
+      <node id="9205860399986164496" at="36,60,37,74" concept="4" />
+      <node id="9205860399986944447" at="37,74,38,43" concept="1" />
+      <node id="9205860399986944449" at="38,43,39,37" concept="1" />
+      <node id="9205860399986164496" at="39,37,40,28" concept="1" />
+      <node id="5041834788290014761" at="42,25,43,66" concept="4" />
+      <node id="5041834788290014761" at="43,66,44,28" concept="1" />
+      <node id="9205860399982338136" at="8,0,11,0" concept="0" trace="testClient#(Lde/janradeck/svgclient/InjectionFactoryClient;)V" />
+      <node id="9205860399984452422" at="24,0,28,0" concept="3" trace="clearV1#()V" />
+      <node id="9205860399984452424" at="28,0,32,0" concept="3" trace="drawRectV1#()V" />
+      <node id="9205860399986164533" at="32,0,36,0" concept="3" trace="simpleDrawV1#()V" />
+      <node id="5041834788290014761" at="42,0,46,0" concept="3" trace="clearV2#()V" />
+      <node id="9205860399984452407" at="12,0,18,0" concept="3" trace="drawGreenV1#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="9205860399984452414" at="18,0,24,0" concept="3" trace="drawBlackV1#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="9205860399986164496" at="36,0,42,0" concept="3" trace="drawLightBlueV2#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="9205860399982338136" at="8,53,9,27" />
+      <scope id="9205860399984452422" at="24,25,26,28">
+        <var name="query" id="9205860399984452422" />
+      </scope>
+      <scope id="9205860399984452424" at="28,28,30,28">
+        <var name="query" id="9205860399984452424" />
+      </scope>
+      <scope id="9205860399986164533" at="32,30,34,28">
+        <var name="query" id="9205860399986164533" />
+      </scope>
+      <scope id="5041834788290014761" at="42,25,44,28">
+        <var name="query" id="5041834788290014761" />
+      </scope>
+      <scope id="9205860399982338136" at="8,0,11,0">
+        <var name="factory" id="9205860399982338136" />
+      </scope>
+      <scope id="9205860399984452407" at="12,56,16,28">
+        <var name="query" id="9205860399984452407" />
+      </scope>
+      <scope id="9205860399984452414" at="18,56,22,28">
+        <var name="query" id="9205860399984452414" />
+      </scope>
+      <scope id="9205860399984452422" at="24,0,28,0" />
+      <scope id="9205860399984452424" at="28,0,32,0" />
+      <scope id="9205860399986164533" at="32,0,36,0" />
+      <scope id="9205860399986164496" at="36,60,40,28">
+        <var name="query" id="9205860399986164496" />
+      </scope>
+      <scope id="5041834788290014761" at="42,0,46,0" />
+      <scope id="9205860399984452407" at="12,0,18,0">
+        <var name="message" id="9205860399984452408" />
+        <var name="path" id="9205860399984452409" />
+      </scope>
+      <scope id="9205860399984452414" at="18,0,24,0">
+        <var name="message" id="9205860399984452416" />
+        <var name="path" id="9205860399984452417" />
+      </scope>
+      <scope id="9205860399986164496" at="36,0,42,0">
+        <var name="message" id="9205860399986944447" />
+        <var name="path" id="9205860399986944449" />
+      </scope>
+      <unit id="9205860399982338136" at="6,0,49,0" name="de.janradeck.svgclient.testClient" />
+    </file>
+    <file name="testServer.java">
+      <node id="9205860399984452402" at="7,0,8,0" concept="6" trace="styleGreenV1" />
+      <node id="9205860399984452403" at="8,0,9,0" concept="6" trace="styleBlueV1" />
+      <node id="9205860399984452405" at="9,0,10,0" concept="6" trace="drawRectV1" />
+      <node id="9205860399984452406" at="10,0,11,0" concept="6" trace="pathRectV1" />
+      <node id="9205860399987948632" at="11,0,12,0" concept="6" trace="styleBlueV2" />
+      <node id="9205860399982338136" at="13,0,14,0" concept="2" trace="server" />
+      <node id="9205860399982338136" at="15,81,16,33" concept="1" />
+      <node id="9205860399984452407" at="16,33,17,84" concept="1" />
+      <node id="9205860399984452414" at="17,84,18,84" concept="1" />
+      <node id="9205860399984452422" at="18,84,19,76" concept="1" />
+      <node id="9205860399984452424" at="19,76,20,82" concept="1" />
+      <node id="9205860399986164533" at="20,82,21,86" concept="1" />
+      <node id="9205860399986164496" at="21,86,22,92" concept="1" />
+      <node id="5041834788290014761" at="22,92,23,76" concept="1" />
+      <node id="9205860399982338136" at="23,76,24,73" concept="5" />
+      <node id="9205860399982338136" at="24,73,25,71" concept="1" />
+      <node id="9205860399982338136" at="25,71,26,19" concept="1" />
+      <node id="9205860399982338136" at="32,22,33,19" concept="1" />
+      <node id="9205860399982338136" at="38,81,39,33" concept="7" />
+      <node id="9205860399982338136" at="42,108,43,35" concept="1" />
+      <node id="9205860399982338136" at="43,35,44,48" concept="1" />
+      <node id="9205860399982338136" at="44,48,45,21" concept="1" />
+      <node id="9205860399982338136" at="45,21,46,26" concept="1" />
+      <node id="9205860399984452407" at="52,87,53,33" concept="7" />
+      <node id="9205860399984452407" at="55,84,56,49" concept="4" />
+      <node id="9205860399984452407" at="56,49,57,35" concept="1" />
+      <node id="9205860399984452407" at="57,35,58,36" concept="1" />
+      <node id="9205860399984452408" at="58,36,59,45" concept="4" />
+      <node id="9205860399984452409" at="59,45,60,39" concept="4" />
+      <node id="9205860399984452410" at="60,39,61,52" concept="1" />
+      <node id="9205860399984452414" at="66,87,67,33" concept="7" />
+      <node id="9205860399984452414" at="69,84,70,49" concept="4" />
+      <node id="9205860399984452414" at="70,49,71,35" concept="1" />
+      <node id="9205860399984452414" at="71,35,72,36" concept="1" />
+      <node id="9205860399984452415" at="72,36,73,49" concept="4" />
+      <node id="9205860399984452416" at="73,49,74,45" concept="4" />
+      <node id="9205860399984452417" at="74,45,75,39" concept="4" />
+      <node id="9205860399984452418" at="75,39,76,52" concept="1" />
+      <node id="9205860399984452422" at="81,83,82,33" concept="7" />
+      <node id="9205860399984452422" at="84,84,85,45" concept="4" />
+      <node id="9205860399984452422" at="85,45,86,35" concept="1" />
+      <node id="9205860399984452422" at="86,35,87,36" concept="1" />
+      <node id="9205860399984452423" at="87,36,88,32" concept="1" />
+      <node id="9205860399984452424" at="93,86,94,33" concept="7" />
+      <node id="9205860399984452424" at="96,84,97,48" concept="4" />
+      <node id="9205860399984452424" at="97,48,98,35" concept="1" />
+      <node id="9205860399984452424" at="98,35,99,36" concept="1" />
+      <node id="9205860399984452425" at="99,36,100,60" concept="1" />
+      <node id="9205860399986164533" at="105,88,106,33" concept="7" />
+      <node id="9205860399986164533" at="108,84,109,50" concept="4" />
+      <node id="9205860399986164533" at="109,50,110,35" concept="1" />
+      <node id="9205860399986164533" at="110,35,111,36" concept="1" />
+      <node id="9205860399986944439" at="111,36,112,61" concept="4" />
+      <node id="9205860399986164560" at="112,61,113,69" concept="1" />
+      <node id="9205860399986164496" at="118,91,119,33" concept="7" />
+      <node id="9205860399986164496" at="121,84,122,53" concept="4" />
+      <node id="9205860399986164496" at="122,53,123,35" concept="1" />
+      <node id="9205860399986164496" at="123,35,124,36" concept="1" />
+      <node id="9205860399986944447" at="124,36,125,45" concept="4" />
+      <node id="9205860399986944449" at="125,45,126,39" concept="4" />
+      <node id="9205860399986944470" at="126,39,127,51" concept="1" />
+      <node id="5041834788290014761" at="132,83,133,33" concept="7" />
+      <node id="5041834788290014761" at="135,84,136,45" concept="4" />
+      <node id="5041834788290014761" at="136,45,137,35" concept="1" />
+      <node id="5041834788290014761" at="137,35,138,36" concept="1" />
+      <node id="5041834788290014762" at="138,36,139,32" concept="1" />
+      <node id="9205860399982338136" at="32,0,35,0" concept="3" trace="stop#()V" />
+      <node id="9205860399982338136" at="38,0,41,0" concept="0" trace="CloseHandler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399984452407" at="52,0,55,0" concept="0" trace="DrawGreenV1Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399984452414" at="66,0,69,0" concept="0" trace="DrawBlackV1Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399984452422" at="81,0,84,0" concept="0" trace="ClearV1Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399984452424" at="93,0,96,0" concept="0" trace="DrawRectV1Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399986164533" at="105,0,108,0" concept="0" trace="SimpleDrawV1Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399986164496" at="118,0,121,0" concept="0" trace="DrawLightBlueV2Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="5041834788290014761" at="132,0,135,0" concept="0" trace="ClearV2Handler#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/CommunicationServer;)V" />
+      <node id="9205860399982338136" at="42,0,48,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;Lde/janradeck/svghttpd/Parameters;Lde/janradeck/svghttpd/SvgApplication;)V" />
+      <node id="9205860399984452422" at="84,0,90,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399984452424" at="96,0,102,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="5041834788290014761" at="135,0,141,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399986164533" at="108,0,115,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399984452407" at="55,0,63,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399986164496" at="121,0,129,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399984452414" at="69,0,78,0" concept="3" trace="executeHandler#(Lde/janradeck/svghttpd/Communication;)V" />
+      <node id="9205860399982338136" at="15,0,28,0" concept="0" trace="testServer#(Lde/janradeck/svghttpd/SvgApplication;Lde/janradeck/svghttpd/InjectionFactoryServer;)V" />
+      <scope id="9205860399982338136" at="32,22,33,19" />
+      <scope id="9205860399982338136" at="38,81,39,33" />
+      <scope id="9205860399984452407" at="52,87,53,33" />
+      <scope id="9205860399984452414" at="66,87,67,33" />
+      <scope id="9205860399984452422" at="81,83,82,33" />
+      <scope id="9205860399984452424" at="93,86,94,33" />
+      <scope id="9205860399986164533" at="105,88,106,33" />
+      <scope id="9205860399986164496" at="118,91,119,33" />
+      <scope id="5041834788290014761" at="132,83,133,33" />
+      <scope id="9205860399982338136" at="32,0,35,0" />
+      <scope id="9205860399982338136" at="38,0,41,0">
+        <var name="application" id="9205860399982338136" />
+        <var name="server" id="9205860399982338136" />
+      </scope>
+      <scope id="9205860399984452407" at="52,0,55,0">
+        <var name="application" id="9205860399984452407" />
+        <var name="server" id="9205860399984452407" />
+      </scope>
+      <scope id="9205860399984452414" at="66,0,69,0">
+        <var name="application" id="9205860399984452414" />
+        <var name="server" id="9205860399984452414" />
+      </scope>
+      <scope id="9205860399984452422" at="81,0,84,0">
+        <var name="application" id="9205860399984452422" />
+        <var name="server" id="9205860399984452422" />
+      </scope>
+      <scope id="9205860399984452424" at="93,0,96,0">
+        <var name="application" id="9205860399984452424" />
+        <var name="server" id="9205860399984452424" />
+      </scope>
+      <scope id="9205860399986164533" at="105,0,108,0">
+        <var name="application" id="9205860399986164533" />
+        <var name="server" id="9205860399986164533" />
+      </scope>
+      <scope id="9205860399986164496" at="118,0,121,0">
+        <var name="application" id="9205860399986164496" />
+        <var name="server" id="9205860399986164496" />
+      </scope>
+      <scope id="5041834788290014761" at="132,0,135,0">
+        <var name="application" id="5041834788290014761" />
+        <var name="server" id="5041834788290014761" />
+      </scope>
+      <scope id="9205860399982338136" at="42,108,46,26" />
+      <scope id="9205860399984452422" at="84,84,88,32">
+        <var name="response" id="9205860399984452422" />
+      </scope>
+      <scope id="9205860399984452424" at="96,84,100,60">
+        <var name="response" id="9205860399984452424" />
+      </scope>
+      <scope id="5041834788290014761" at="135,84,139,32">
+        <var name="response" id="5041834788290014761" />
+      </scope>
+      <scope id="9205860399986164533" at="108,84,113,69">
+        <var name="response" id="9205860399986164533" />
+        <var name="simpleDrawMessageV1" id="9205860399986944439" />
+      </scope>
+      <scope id="9205860399982338136" at="42,0,48,0">
+        <var name="application" id="9205860399982338136" />
+        <var name="communication" id="9205860399982338136" />
+        <var name="params" id="9205860399982338136" />
+      </scope>
+      <scope id="9205860399984452407" at="55,84,61,52">
+        <var name="message" id="9205860399984452408" />
+        <var name="path" id="9205860399984452409" />
+        <var name="response" id="9205860399984452407" />
+      </scope>
+      <scope id="9205860399984452422" at="84,0,90,0">
+        <var name="application" id="9205860399984452422" />
+        <var name="communication" id="9205860399984452422" />
+        <var name="params" id="9205860399984452422" />
+      </scope>
+      <scope id="9205860399984452424" at="96,0,102,0">
+        <var name="application" id="9205860399984452424" />
+        <var name="communication" id="9205860399984452424" />
+        <var name="params" id="9205860399984452424" />
+      </scope>
+      <scope id="9205860399986164496" at="121,84,127,51">
+        <var name="message" id="9205860399986944447" />
+        <var name="path" id="9205860399986944449" />
+        <var name="response" id="9205860399986164496" />
+      </scope>
+      <scope id="5041834788290014761" at="135,0,141,0">
+        <var name="application" id="5041834788290014761" />
+        <var name="communication" id="5041834788290014761" />
+        <var name="params" id="5041834788290014761" />
+      </scope>
+      <scope id="9205860399984452414" at="69,84,76,52">
+        <var name="message" id="9205860399984452416" />
+        <var name="path" id="9205860399984452417" />
+        <var name="response" id="9205860399984452414" />
+        <var name="styleBlackV1" id="9205860399984452415" />
+      </scope>
+      <scope id="9205860399986164533" at="108,0,115,0">
+        <var name="application" id="9205860399986164533" />
+        <var name="communication" id="9205860399986164533" />
+        <var name="params" id="9205860399986164533" />
+      </scope>
+      <scope id="9205860399984452407" at="55,0,63,0">
+        <var name="application" id="9205860399984452407" />
+        <var name="communication" id="9205860399984452407" />
+        <var name="params" id="9205860399984452407" />
+      </scope>
+      <scope id="9205860399986164496" at="121,0,129,0">
+        <var name="application" id="9205860399986164496" />
+        <var name="communication" id="9205860399986164496" />
+        <var name="params" id="9205860399986164496" />
+      </scope>
+      <scope id="9205860399984452414" at="69,0,78,0">
+        <var name="application" id="9205860399984452414" />
+        <var name="communication" id="9205860399984452414" />
+        <var name="params" id="9205860399984452414" />
+      </scope>
+      <scope id="9205860399982338136" at="15,81,26,19" />
+      <scope id="9205860399982338136" at="15,0,28,0">
+        <var name="application" id="9205860399982338136" />
+        <var name="factory" id="9205860399982338136" />
+      </scope>
+      <unit id="9205860399984452422" at="80,0,92,0" name="de.janradeck.svghttpd.testServer$ClearV1Handler" />
+      <unit id="9205860399984452424" at="92,0,104,0" name="de.janradeck.svghttpd.testServer$DrawRectV1Handler" />
+      <unit id="5041834788290014761" at="131,0,143,0" name="de.janradeck.svghttpd.testServer$ClearV2Handler" />
+      <unit id="9205860399982338136" at="36,0,49,0" name="de.janradeck.svghttpd.testServer$CloseHandler" />
+      <unit id="9205860399986164533" at="104,0,117,0" name="de.janradeck.svghttpd.testServer$SimpleDrawV1Handler" />
+      <unit id="9205860399984452407" at="51,0,65,0" name="de.janradeck.svghttpd.testServer$DrawGreenV1Handler" />
+      <unit id="9205860399986164496" at="117,0,131,0" name="de.janradeck.svghttpd.testServer$DrawLightBlueV2Handler" />
+      <unit id="9205860399984452414" at="65,0,80,0" name="de.janradeck.svghttpd.testServer$DrawBlackV1Handler" />
+      <unit id="9205860399982338136" at="6,0,146,0" name="de.janradeck.svghttpd.testServer" />
+    </file>
+  </root>
+</debug-info>
+

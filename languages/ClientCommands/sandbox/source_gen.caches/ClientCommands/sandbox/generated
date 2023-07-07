@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bsczve63b4qow1lhnyvzrrgu8vmmkii">
+  <files dir="de/janradeck/svgclient" names="SvgDrawerClient.java:testClient.java" />
+  <files dir="de/janradeck/svghttpd" names="SvgDrawerServer.java:testServer.java" />
+</product>
+

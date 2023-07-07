@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="ClientCommands.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e183ef99-ff24-486c-bb85-e1a5f2ccd7e5(ClientCommands.constraints)/2744280732217314903">
+    <file name="StringValueReference_Constraints.java">
+      <node id="2744280732217314903" at="29,45,30,44" concept="7" />
+      <node id="2744280732217999836" at="41,63,42,129" concept="4" />
+      <node id="2744280732218000237" at="45,80,46,192" concept="3" />
+      <node id="2744280732218630615" at="46,192,47,197" concept="3" />
+      <node id="2744280732218490058" at="47,197,48,195" concept="3" />
+      <node id="2744280732218285404" at="51,50,52,67" concept="4" />
+      <node id="2744280732218193483" at="54,14,55,0" concept="5" />
+      <node id="2744280732217314903" at="59,6,60,131" concept="3" />
+      <node id="2744280732217999836" at="60,131,61,42" concept="1" />
+      <node id="2744280732217314903" at="61,42,62,22" concept="4" />
+      <node id="2744280732217314903" at="66,0,67,0" concept="6" trace="StringValueReference$SJ" />
+      <node id="2744280732217314903" at="67,0,68,0" concept="6" trace="ClientCommand$QP" />
+      <node id="2744280732217314903" at="68,0,69,0" concept="6" trace="CommandListVersion$fm" />
+      <node id="2744280732217314903" at="72,0,73,0" concept="6" trace="value$4E$k" />
+      <node id="2744280732217314903" at="73,0,74,0" concept="6" trace="commandParameters$l9Sr" />
+      <node id="2744280732217314903" at="74,0,75,0" concept="6" trace="commandConstants$4IsL" />
+      <node id="2744280732217314903" at="75,0,76,0" concept="6" trace="versionGlobals$GQ7p" />
+      <node id="2744280732217314903" at="29,0,32,0" concept="0" trace="StringValueReference_Constraints#()V" />
+      <node id="2744280732217999836" at="40,0,44,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2744280732218194735" at="50,0,54,0" concept="2" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2744280732218190017" at="48,195,54,14" concept="4" />
+      <node id="2744280732217999836" at="44,0,57,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2744280732217999836" at="38,56,57,10" concept="4" />
+      <node id="2744280732217999836" at="36,0,59,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2744280732217999836" at="34,90,59,6" concept="3" />
+      <node id="2744280732217314903" at="33,0,64,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2744280732217314903" at="29,45,30,44" />
+      <scope id="2744280732217999836" at="41,63,42,129" />
+      <scope id="2744280732218194741" at="51,50,52,67" />
+      <scope id="2744280732217314903" at="29,0,32,0" />
+      <scope id="2744280732217999836" at="40,0,44,0" />
+      <scope id="2744280732218194735" at="50,0,54,0">
+        <var name="child" id="2744280732218194739" />
+      </scope>
+      <scope id="2744280732217999836" at="45,80,55,0">
+        <var name="declarations" id="2744280732218630618" />
+        <var name="globals" id="2744280732218490061" />
+        <var name="values" id="2744280732218000240" />
+      </scope>
+      <scope id="2744280732217999836" at="44,0,57,0">
+        <var name="_context" id="2744280732217999836" />
+      </scope>
+      <scope id="2744280732217999836" at="38,56,57,10" />
+      <scope id="2744280732217999836" at="36,0,59,0" />
+      <scope id="2744280732217314903" at="34,90,62,22">
+        <var name="d0" id="2744280732217999836" />
+        <var name="references" id="2744280732217314903" />
+      </scope>
+      <scope id="2744280732217314903" at="33,0,64,0" />
+      <unit id="2744280732218194707" at="49,23,54,13" name="ClientCommands.constraints.StringValueReference_Constraints$1$1$1" />
+      <unit id="2744280732217314903" at="65,0,70,0" name="ClientCommands.constraints.StringValueReference_Constraints$CONCEPTS" />
+      <unit id="2744280732217314903" at="71,0,77,0" name="ClientCommands.constraints.StringValueReference_Constraints$LINKS" />
+      <unit id="2744280732217999836" at="39,19,57,9" name="ClientCommands.constraints.StringValueReference_Constraints$1$1" />
+      <unit id="2744280732217999836" at="35,48,59,5" name="ClientCommands.constraints.StringValueReference_Constraints$1" />
+      <unit id="2744280732217314903" at="28,0,78,0" name="ClientCommands.constraints.StringValueReference_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
