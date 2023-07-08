@@ -16,7 +16,6 @@
     <import index="oank" ref="r:fc65f0b7-36e1-4742-885d-350b7bf8470e(ClientCommands.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="rjol" ref="9dc4a82e-5b05-4550-b576-de4099846575/java:de.janradeck.svghttpd(SvgCommands.generator/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -848,7 +847,7 @@
                   <ref role="3cqZAo" node="5CxEgSLRwvg" resolve="params" />
                 </node>
                 <node concept="liA8E" id="2olDc_04Pms" role="2OqNvi">
-                  <ref role="37wK5l" to="rjol:~Parameters.get(java.lang.String)" resolve="get" />
+                  <ref role="37wK5l" to="rjok:~Parameters.get(java.lang.String)" resolve="get" />
                   <node concept="Xl_RD" id="2olDc_04PEa" role="37wK5m">
                     <property role="Xl_RC" value="param" />
                     <node concept="17Uvod" id="2olDc_05a45" role="lGtFl">
@@ -910,7 +909,7 @@
                     <ref role="3cqZAo" node="5CxEgSLS$vb" resolve="application" />
                   </node>
                   <node concept="liA8E" id="2olDc_02sDL" role="2OqNvi">
-                    <ref role="37wK5l" to="rjol:~SvgApplication.draw(java.lang.String,java.lang.String,java.lang.String)" resolve="draw" />
+                    <ref role="37wK5l" to="rjok:~SvgApplication.draw(java.lang.String,java.lang.String,java.lang.String)" resolve="draw" />
                     <node concept="37vLTw" id="4sRvlpUNoLr" role="37wK5m">
                       <ref role="3cqZAo" node="2olDc_04RFu" resolve="localConst" />
                     </node>
@@ -952,13 +951,13 @@
         <node concept="37vLTG" id="5CxEgSLRwvg" role="3clF46">
           <property role="TrG5h" value="params" />
           <node concept="3uibUv" id="5CxEgSLRwZ9" role="1tU5fm">
-            <ref role="3uigEE" to="rjol:~Parameters" resolve="Parameters" />
+            <ref role="3uigEE" to="rjok:~Parameters" resolve="Parameters" />
           </node>
         </node>
         <node concept="37vLTG" id="5CxEgSLS$vb" role="3clF46">
           <property role="TrG5h" value="application" />
           <node concept="3uibUv" id="5CxEgSLS_7x" role="1tU5fm">
-            <ref role="3uigEE" to="rjol:~SvgApplication" resolve="SvgApplication" />
+            <ref role="3uigEE" to="rjok:~SvgApplication" resolve="SvgApplication" />
           </node>
         </node>
       </node>

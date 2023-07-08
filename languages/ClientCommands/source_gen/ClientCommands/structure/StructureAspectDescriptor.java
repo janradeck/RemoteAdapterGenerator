@@ -95,10 +95,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForCommandListVersion() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ClientCommands", "CommandListVersion", 0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:7c9c9d02-de44-4a02-9f18-27528ededf0d(ClientCommands.structure)/2744280732216607776");
     b.version(3);
     b.property("version", 0x2615a4c93fb9ae48L).type(PrimitiveTypeId.INTEGER).origin("2744280732216700488").done();
-    b.aggregate("versionGlobals", 0x2615a4c93fbdb671L).target(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae13L).optional(true).ordered(true).multiple(true).origin("2744280732216964721").done();
+    b.aggregate("versionConstants", 0x2615a4c93fbdb671L).target(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae13L).optional(true).ordered(true).multiple(true).origin("2744280732216964721").done();
     b.aggregate("versionCommands", 0x2615a4c93fb9ae26L).target(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL).optional(false).ordered(true).multiple(true).origin("2744280732216700454").done();
     return b.create();
   }

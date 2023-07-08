@@ -270,7 +270,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2olDc$ZJrqV" role="3EZMnx">
-        <ref role="1NtTu8" to="1nxb:2olDc$ZJrpL" resolve="versionGlobals" />
+        <ref role="1NtTu8" to="1nxb:2olDc$ZJrpL" resolve="versionConstants" />
         <node concept="l2Vlx" id="2olDc$ZJrqX" role="2czzBx" />
         <node concept="pVoyu" id="2olDc$ZJrrf" role="3F10Kt">
           <property role="VOm3f" value="true" />

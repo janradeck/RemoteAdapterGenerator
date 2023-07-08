@@ -169,7 +169,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="5SMyP6g69yr">
-    <property role="TrG5h" value="CheckDrawInterface" />
+    <property role="TrG5h" value="CheckCommandListVersion" />
     <node concept="3clFbS" id="5SMyP6g69ys" role="18ibNy">
       <node concept="3SKdUt" id="28_JEUmOYh1" role="3cqZAp">
         <node concept="1PaTwC" id="28_JEUmOYh2" role="1aUNEU">
@@ -202,6 +202,24 @@
           </node>
           <node concept="3oM_SD" id="28_JEUmOYlk" role="1PaTwD">
             <property role="3oM_SC" value="long" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwFF" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwGJ" role="1PaTwD">
+            <property role="3oM_SC" value="may" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwGW" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwHa" role="1PaTwD">
+            <property role="3oM_SC" value="contain" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwHp" role="1PaTwD">
+            <property role="3oM_SC" value="certain" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSIwHD" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
           </node>
         </node>
       </node>
@@ -328,7 +346,7 @@
                     <node concept="3clFbS" id="7G1ee2Exvrp" role="3clFbx">
                       <node concept="2MkqsV" id="7G1ee2Ex_Pu" role="3cqZAp">
                         <node concept="Xl_RD" id="7G1ee2Ex_PH" role="2MkJ7o">
-                          <property role="Xl_RC" value="Global constant with same name" />
+                          <property role="Xl_RC" value="Version constant with same name" />
                         </node>
                         <node concept="37vLTw" id="7G1ee2Ex_Qj" role="1urrMF">
                           <ref role="3cqZAo" node="7G1ee2EwUh3" resolve="globalDeclaration" />
@@ -459,7 +477,7 @@
             <node concept="3clFbS" id="5CxEgSL_$fF" role="3clFbx">
               <node concept="a7r0C" id="5CxEgSL_$iE" role="3cqZAp">
                 <node concept="Xl_RD" id="5CxEgSL_$iZ" role="a7wSD">
-                  <property role="Xl_RC" value="Global not referenced " />
+                  <property role="Xl_RC" value="Version constant not referenced " />
                 </node>
                 <node concept="37vLTw" id="5CxEgSL_$jL" role="1urrMF">
                   <ref role="3cqZAo" node="7G1ee2EwUh3" resolve="globalDeclaration" />
@@ -474,7 +492,7 @@
           </node>
         </node>
         <node concept="3cpWsn" id="7G1ee2EwUh3" role="1Duv9x">
-          <property role="TrG5h" value="globalDeclaration" />
+          <property role="TrG5h" value="versionConstant" />
           <node concept="3Tqbb2" id="7G1ee2EwUqY" role="1tU5fm">
             <ref role="ehGHo" to="1nxb:2olDc$ZIqSj" resolve="StringConstant" />
           </node>
@@ -484,7 +502,7 @@
             <ref role="1YBMHb" node="5SMyP6g69yu" resolve="drawInterface" />
           </node>
           <node concept="3Tsc0h" id="7G1ee2EwWV9" role="2OqNvi">
-            <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionGlobals" />
+            <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionConstants" />
           </node>
         </node>
       </node>
@@ -588,12 +606,12 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5SMyP6g69yu" role="1YuTPh">
-      <property role="TrG5h" value="drawInterface" />
+      <property role="TrG5h" value="commandListVersion" />
       <ref role="1YaFvo" to="1nxb:2olDc$ZI4gw" resolve="CommandListVersion" />
     </node>
   </node>
   <node concept="18kY7G" id="7G1ee2ExLde">
-    <property role="TrG5h" value="CheckInterfaceCommand" />
+    <property role="TrG5h" value="CheckClientCommand" />
     <node concept="3clFbS" id="7G1ee2ExLdf" role="18ibNy">
       <node concept="3cpWs8" id="4nScwrOutnX" role="3cqZAp">
         <node concept="3cpWsn" id="4nScwrOutnV" role="3cpWs9">
@@ -681,7 +699,7 @@
           <node concept="2MkqsV" id="5CxEgSLMz_8" role="3cqZAp">
             <node concept="3cpWs3" id="4nScwrOhkxM" role="2MkJ7o">
               <node concept="Xl_RD" id="5CxEgSLMz_n" role="3uHU7w">
-                <property role="Xl_RC" value="\&quot; is a reserved command" />
+                <property role="Xl_RC" value="\&quot; is a reserved client command" />
               </node>
               <node concept="3cpWs3" id="4nScwrOgCRB" role="3uHU7B">
                 <node concept="Xl_RD" id="4nScwrOgRde" role="3uHU7B">
@@ -747,7 +765,7 @@
             <property role="3oM_SC" value="siblings" />
           </node>
           <node concept="3oM_SD" id="7G1ee2EFNGO" role="1PaTwD">
-            <property role="3oM_SC" value="(InterfaceCommand)" />
+            <property role="3oM_SC" value="(ClientCommand)" />
           </node>
         </node>
       </node>
@@ -759,7 +777,7 @@
                 <node concept="3clFbS" id="7G1ee2EC8ly" role="3clFbx">
                   <node concept="2MkqsV" id="7G1ee2EE9u$" role="3cqZAp">
                     <node concept="Xl_RD" id="7G1ee2EE9uN" role="2MkJ7o">
-                      <property role="Xl_RC" value="Command with the same name" />
+                      <property role="Xl_RC" value="Client command with the same name" />
                     </node>
                     <node concept="1YBJjd" id="7G1ee2EE9w6" role="1urrMF">
                       <ref role="1YBMHb" node="7G1ee2ExLdh" resolve="interfaceCommand" />
@@ -828,13 +846,19 @@
           <node concept="3oM_SD" id="7G1ee2ENUUc" role="1PaTwD">
             <property role="3oM_SC" value="Check" />
           </node>
-          <node concept="3oM_SD" id="7G1ee2ENUUf" role="1PaTwD">
-            <property role="3oM_SC" value="declaration" />
-          </node>
-          <node concept="3oM_SD" id="7G1ee2EYbmf" role="1PaTwD">
+          <node concept="3oM_SD" id="3H_6mwSL8mB" role="1PaTwD">
             <property role="3oM_SC" value="name" />
           </node>
           <node concept="3oM_SD" id="7G1ee2EYbmk" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSL8mK" role="1PaTwD">
+            <property role="3oM_SC" value="local" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSL8mT" role="1PaTwD">
+            <property role="3oM_SC" value="constant" />
+          </node>
+          <node concept="3oM_SD" id="3H_6mwSL8n3" role="1PaTwD">
             <property role="3oM_SC" value="is" />
           </node>
           <node concept="3oM_SD" id="7G1ee2EYbmq" role="1PaTwD">
@@ -850,7 +874,7 @@
       </node>
       <node concept="1DcWWT" id="7G1ee2ExLdq" role="3cqZAp">
         <node concept="3cpWsn" id="7G1ee2ExLdr" role="1Duv9x">
-          <property role="TrG5h" value="declaration" />
+          <property role="TrG5h" value="commandConstant" />
           <node concept="3Tqbb2" id="7G1ee2ExLme" role="1tU5fm">
             <ref role="ehGHo" to="1nxb:2olDc$ZIqSj" resolve="StringConstant" />
           </node>
@@ -1055,7 +1079,7 @@
                 <node concept="3clFbS" id="7G1ee2EzCj5" role="3clFbx">
                   <node concept="2MkqsV" id="7G1ee2EzDVs" role="3cqZAp">
                     <node concept="Xl_RD" id="7G1ee2EzDVF" role="2MkJ7o">
-                      <property role="Xl_RC" value="Global constant with the same name" />
+                      <property role="Xl_RC" value="Version constant with the same name" />
                     </node>
                     <node concept="37vLTw" id="7G1ee2EzDWG" role="1urrMF">
                       <ref role="3cqZAo" node="7G1ee2ExLdr" resolve="declaration" />
@@ -1101,7 +1125,7 @@
               </node>
             </node>
             <node concept="3cpWsn" id="7G1ee2EyPc$" role="1Duv9x">
-              <property role="TrG5h" value="global" />
+              <property role="TrG5h" value="versionConstant" />
               <node concept="3Tqbb2" id="7G1ee2EyPlT" role="1tU5fm">
                 <ref role="ehGHo" to="1nxb:2olDc$ZIqSj" resolve="StringConstant" />
               </node>
@@ -1120,7 +1144,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="7G1ee2EzlZK" role="2OqNvi">
-                <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionGlobals" />
+                <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionConstants" />
               </node>
             </node>
           </node>
@@ -1369,7 +1393,7 @@
                 <node concept="3clFbS" id="7G1ee2EzEcc" role="3clFbx">
                   <node concept="2MkqsV" id="7G1ee2EzEcd" role="3cqZAp">
                     <node concept="Xl_RD" id="7G1ee2EzEce" role="2MkJ7o">
-                      <property role="Xl_RC" value="Global constant with the same name" />
+                      <property role="Xl_RC" value="Version constant with the same name" />
                     </node>
                     <node concept="37vLTw" id="7G1ee2EzEcf" role="1urrMF">
                       <ref role="3cqZAo" node="7G1ee2Ey3sv" resolve="parameter" />
@@ -1415,7 +1439,7 @@
               </node>
             </node>
             <node concept="3cpWsn" id="7G1ee2EzEcq" role="1Duv9x">
-              <property role="TrG5h" value="global" />
+              <property role="TrG5h" value="versionConstant" />
               <node concept="3Tqbb2" id="7G1ee2EzEcr" role="1tU5fm">
                 <ref role="ehGHo" to="1nxb:2olDc$ZIqSj" resolve="StringConstant" />
               </node>
@@ -1434,11 +1458,10 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="7G1ee2EzEcy" role="2OqNvi">
-                <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionGlobals" />
+                <ref role="3TtcxE" to="1nxb:2olDc$ZJrpL" resolve="versionConstants" />
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="7G1ee2EzEbC" role="3cqZAp" />
         </node>
         <node concept="3cpWsn" id="7G1ee2Ey3sv" role="1Duv9x">
           <property role="TrG5h" value="parameter" />
@@ -1650,10 +1673,9 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="7G1ee2Eyhp0" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7G1ee2ExLdh" role="1YuTPh">
-      <property role="TrG5h" value="interfaceCommand" />
+      <property role="TrG5h" value="clientCommand" />
       <ref role="1YaFvo" to="1nxb:2olDc$ZIqSe" resolve="ClientCommand" />
     </node>
   </node>

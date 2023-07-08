@@ -23,71 +23,71 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-public class CheckInterfaceCommand_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
-  public CheckInterfaceCommand_NonTypesystemRule() {
+public class CheckClientCommand_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
+  public CheckClientCommand_NonTypesystemRule() {
   }
-  public void applyRule(final SNode interfaceCommand, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+  public void applyRule(final SNode clientCommand, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     final String closeCommand = "close";
     final String patternValidName = "^[A-Za-z0-9]+$";
     //  Validate command name
-    if (!(SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL).matches(patternValidName))) {
+    if (!(SPropertyOperations.getString(clientCommand, PROPS.name$MnvL).matches(patternValidName))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(interfaceCommand, "Invalid name \"" + SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079230218450", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(clientCommand, "Invalid name \"" + SPropertyOperations.getString(clientCommand, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079230218450", null, errorTarget);
       }
     }
-    if (SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL).matches(closeCommand)) {
+    if (SPropertyOperations.getString(clientCommand, PROPS.name$MnvL).matches(closeCommand)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(interfaceCommand, "\"" + closeCommand + "\" is a reserved command", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "6494658016074938696", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(clientCommand, "\"" + closeCommand + "\" is a reserved client command", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "6494658016074938696", null, errorTarget);
       }
     }
-    //  Check that name is unique by comparing with siblings (InterfaceCommand)
-    for (SNode sibling : SNodeOperations.getAllSiblings(interfaceCommand, false)) {
-      if (Objects.equals(SNodeOperations.getConcept(interfaceCommand), SNodeOperations.getConcept(sibling))) {
-        if (Objects.equals(SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
+    //  Check that name is unique by comparing with siblings (ClientCommand)
+    for (SNode sibling : SNodeOperations.getAllSiblings(clientCommand, false)) {
+      if (Objects.equals(SNodeOperations.getConcept(clientCommand), SNodeOperations.getConcept(sibling))) {
+        if (Objects.equals(SPropertyOperations.getString(clientCommand, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(interfaceCommand, "Command with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079228852132", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(clientCommand, "Client command with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079228852132", null, errorTarget);
           }
         }
       }
     }
-    //  Check declaration name is valid and unique
-    for (SNode declaration : SLinkOperations.getChildren(interfaceCommand, LINKS.commandConstants$4IsL)) {
-      if (!(SPropertyOperations.getString(declaration, PROPS.name$MnvL).matches(patternValidName))) {
+    //  Check name of local constant is valid and unique
+    for (SNode commandConstant : SLinkOperations.getChildren(clientCommand, LINKS.commandConstants$4IsL)) {
+      if (!(SPropertyOperations.getString(commandConstant, PROPS.name$MnvL).matches(patternValidName))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(declaration, "Invalid name \"" + SPropertyOperations.getString(declaration, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079234093983", null, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(commandConstant, "Invalid name \"" + SPropertyOperations.getString(commandConstant, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079234093983", null, errorTarget);
         }
       }
       //  Check that name is unique by comparing with siblings (StringConstant)
-      for (SNode sibling : SNodeOperations.getAllSiblings(declaration, false)) {
-        if (Objects.equals(SNodeOperations.getConcept(declaration), SNodeOperations.getConcept(sibling))) {
-          if (Objects.equals(SPropertyOperations.getString(declaration, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
+      for (SNode sibling : SNodeOperations.getAllSiblings(commandConstant, false)) {
+        if (Objects.equals(SNodeOperations.getConcept(commandConstant), SNodeOperations.getConcept(sibling))) {
+          if (Objects.equals(SPropertyOperations.getString(commandConstant, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
-              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(declaration, "Local constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079226729643", null, errorTarget);
+              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(commandConstant, "Local constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079226729643", null, errorTarget);
             }
           }
         }
       }
       // Check that name is unique by comparing with global constants
-      for (SNode global : SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(interfaceCommand, CONCEPTS.CommandListVersion$fm, false, false), LINKS.versionGlobals$GQ7p)) {
-        if (Objects.equals(SPropertyOperations.getString(declaration, PROPS.name$MnvL), SPropertyOperations.getString(global, PROPS.name$MnvL))) {
+      for (SNode versionConstant : SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(clientCommand, CONCEPTS.CommandListVersion$fm, false, false), LINKS.versionConstants$GQ7p)) {
+        if (Objects.equals(SPropertyOperations.getString(commandConstant, PROPS.name$MnvL), SPropertyOperations.getString(versionConstant, PROPS.name$MnvL))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(declaration, "Global constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227150044", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(commandConstant, "Version constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227150044", null, errorTarget);
           }
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(global, "Local constant with the same name in " + SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227150515", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(versionConstant, "Local constant with the same name in " + SPropertyOperations.getString(clientCommand, PROPS.name$MnvL), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227150515", null, errorTarget);
           }
         }
       }
     }
     //  Check that parameter name is valid and unique
-    for (SNode parameter : SLinkOperations.getChildren(interfaceCommand, LINKS.commandParameters$l9Sr)) {
+    for (SNode parameter : SLinkOperations.getChildren(clientCommand, LINKS.commandParameters$l9Sr)) {
       if (!(SPropertyOperations.getString(parameter, PROPS.name$MnvL).matches(patternValidName))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
@@ -107,23 +107,22 @@ public class CheckInterfaceCommand_NonTypesystemRule extends AbstractNonTypesyst
         }
       }
       // Check that parameter has a unique name by comparing it with global constants
-      for (SNode global : SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(interfaceCommand, CONCEPTS.CommandListVersion$fm, false, false), LINKS.versionGlobals$GQ7p)) {
-        if (Objects.equals(SPropertyOperations.getString(parameter, PROPS.name$MnvL), SPropertyOperations.getString(global, PROPS.name$MnvL))) {
+      for (SNode versionConstant : SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(clientCommand, CONCEPTS.CommandListVersion$fm, false, false), LINKS.versionConstants$GQ7p)) {
+        if (Objects.equals(SPropertyOperations.getString(parameter, PROPS.name$MnvL), SPropertyOperations.getString(versionConstant, PROPS.name$MnvL))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(parameter, "Global constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227151117", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(parameter, "Version constant with the same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227151117", null, errorTarget);
           }
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(global, "Local parameter with the same name in " + SPropertyOperations.getString(interfaceCommand, PROPS.name$MnvL), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227151120", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(versionConstant, "Local parameter with the same name in " + SPropertyOperations.getString(clientCommand, PROPS.name$MnvL), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079227151120", null, errorTarget);
           }
         }
       }
-
     }
     // Check that constants and parameters have unique names
-    for (SNode declaration : SLinkOperations.getChildren(interfaceCommand, LINKS.commandConstants$4IsL)) {
-      for (SNode parameter : SLinkOperations.getChildren(interfaceCommand, LINKS.commandParameters$l9Sr)) {
+    for (SNode declaration : SLinkOperations.getChildren(clientCommand, LINKS.commandConstants$4IsL)) {
+      for (SNode parameter : SLinkOperations.getChildren(clientCommand, LINKS.commandParameters$l9Sr)) {
         if (Objects.equals(SPropertyOperations.getString(declaration, PROPS.name$MnvL), SPropertyOperations.getString(parameter, PROPS.name$MnvL))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
@@ -137,8 +136,8 @@ public class CheckInterfaceCommand_NonTypesystemRule extends AbstractNonTypesyst
       }
     }
     // Check that all parameters are referenced
-    for (final SNode parameter : SLinkOperations.getChildren(interfaceCommand, LINKS.commandParameters$l9Sr)) {
-      if (!(ListSequence.fromList(SNodeOperations.getNodeDescendants(interfaceCommand, CONCEPTS.StringValueReference$SJ, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+    for (final SNode parameter : SLinkOperations.getChildren(clientCommand, LINKS.commandParameters$l9Sr)) {
+      if (!(ListSequence.fromList(SNodeOperations.getNodeDescendants(clientCommand, CONCEPTS.StringValueReference$SJ, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return Objects.equals(SLinkOperations.getTarget(it, LINKS.value$4E$k), parameter);
         }
@@ -149,7 +148,6 @@ public class CheckInterfaceCommand_NonTypesystemRule extends AbstractNonTypesyst
         }
       }
     }
-
   }
   public SAbstractConcept getApplicableConcept() {
     return CONCEPTS.ClientCommand$QP;
@@ -167,7 +165,7 @@ public class CheckInterfaceCommand_NonTypesystemRule extends AbstractNonTypesyst
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink commandConstants$4IsL = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fb9ae43L, "commandConstants");
-    /*package*/ static final SContainmentLink versionGlobals$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionGlobals");
+    /*package*/ static final SContainmentLink versionConstants$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionConstants");
     /*package*/ static final SContainmentLink commandParameters$l9Sr = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fbcac0cL, "commandParameters");
     /*package*/ static final SReferenceLink value$4E$k = MetaAdapterFactory.getReferenceLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fc158adL, 0x2615a4c93fc158aeL, "value");
   }

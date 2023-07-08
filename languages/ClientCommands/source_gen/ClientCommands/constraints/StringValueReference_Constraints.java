@@ -9,21 +9,10 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
-import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.smodel.SNodePointer;
-import jetbrains.mps.scope.Scope;
-import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import java.util.List;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.scope.ListScope;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class StringValueReference_Constraints extends BaseConstraintsDescriptor {
   public StringValueReference_Constraints() {
@@ -36,25 +25,7 @@ public class StringValueReference_Constraints extends BaseConstraintsDescriptor 
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {
-          @Override
-          public SNodeReference getSearchScopeValidatorNode() {
-            return new SNodePointer("r:e183ef99-ff24-486c-bb85-e1a5f2ccd7e5(ClientCommands.constraints)", "2744280732218000000");
-          }
-          @Override
-          public Scope createScope(final ReferenceConstraintsContext _context) {
-            List<SNode> values = SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.ClientCommand$QP, false, false), LINKS.commandParameters$l9Sr);
-            List<SNode> declarations = SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.ClientCommand$QP, false, false), LINKS.commandConstants$4IsL);
-            List<SNode> globals = SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.CommandListVersion$fm, false, false), LINKS.versionGlobals$GQ7p);
-            return new ListScope(ListSequence.fromList(values).concat(ListSequence.fromList(globals)).concat(ListSequence.fromList(declarations))) {
-              @Override
-              public String getName(SNode child) {
-                return SNodeOperations.getConcept(child).getName();
-              }
-            };
-
-          }
-        };
+        return ReferenceScopeProvider.fromHierarchy(CONCEPTS.StringValue$SL, new SNodePointer("r:e183ef99-ff24-486c-bb85-e1a5f2ccd7e5(ClientCommands.constraints)", "4279854956305796700"));
       }
     };
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
@@ -64,14 +35,10 @@ public class StringValueReference_Constraints extends BaseConstraintsDescriptor 
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept StringValueReference$SJ = MetaAdapterFactory.getConcept(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fc158adL, "ClientCommands.structure.StringValueReference");
-    /*package*/ static final SConcept ClientCommand$QP = MetaAdapterFactory.getConcept(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, "ClientCommands.structure.ClientCommand");
-    /*package*/ static final SConcept CommandListVersion$fm = MetaAdapterFactory.getConcept(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, "ClientCommands.structure.CommandListVersion");
+    /*package*/ static final SConcept StringValue$SL = MetaAdapterFactory.getConcept(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae12L, "ClientCommands.structure.StringValue");
   }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink value$4E$k = MetaAdapterFactory.getReferenceLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fc158adL, 0x2615a4c93fc158aeL, "value");
-    /*package*/ static final SContainmentLink commandParameters$l9Sr = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fbcac0cL, "commandParameters");
-    /*package*/ static final SContainmentLink commandConstants$4IsL = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fb9ae43L, "commandConstants");
-    /*package*/ static final SContainmentLink versionGlobals$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionGlobals");
   }
 }

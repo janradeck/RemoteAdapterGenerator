@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="6vfprwbpe6vvx3cbl1875wzunt71l6j">
-  <files names="BehaviorAspectDescriptor.java:ClientCommand__BehaviorDescriptor.java:ServerCommandClearCanvas__BehaviorDescriptor.java:ServerCommandDrawPath__BehaviorDescriptor.java:ServerCommand__BehaviorDescriptor.java:StringConstant__BehaviorDescriptor.java:StringParameter__BehaviorDescriptor.java:StringValueTraits__BehaviorDescriptor.java:StringValue__BehaviorDescriptor.java" />
+<product version="3" modelHash="-a8aurw164lgfynhb5e8w1w2bzjp9y3q">
+  <files names="BehaviorAspectDescriptor.java:ClientCommand__BehaviorDescriptor.java:CommandListVersion__BehaviorDescriptor.java:ServerCommandClearCanvas__BehaviorDescriptor.java:ServerCommandDrawPath__BehaviorDescriptor.java:ServerCommand__BehaviorDescriptor.java:StringConstant__BehaviorDescriptor.java:StringParameter__BehaviorDescriptor.java:StringValueTraits__BehaviorDescriptor.java:StringValue__BehaviorDescriptor.java" />
 </product>
 

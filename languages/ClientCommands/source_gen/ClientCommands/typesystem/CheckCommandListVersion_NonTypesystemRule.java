@@ -21,36 +21,36 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-public class CheckDrawInterface_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
-  public CheckDrawInterface_NonTypesystemRule() {
+public class CheckCommandListVersion_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
+  public CheckCommandListVersion_NonTypesystemRule() {
   }
-  public void applyRule(final SNode drawInterface, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    //  Name needs to be at least one character long
+  public void applyRule(final SNode commandListVersion, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    //  Name needs to be at least one character long and may only contain certain characters
     final String patternValidName = "^[A-Za-z0-9]+$";
 
     //  Validate format of the name
-    for (SNode globalDeclaration : SLinkOperations.getChildren(drawInterface, LINKS.versionGlobals$GQ7p)) {
-      if (!(SPropertyOperations.getString(globalDeclaration, PROPS.name$MnvL).matches(patternValidName))) {
+    for (SNode versionConstant : SLinkOperations.getChildren(commandListVersion, LINKS.versionConstants$GQ7p)) {
+      if (!(SPropertyOperations.getString(versionConstant, PROPS.name$MnvL).matches(patternValidName))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(globalDeclaration, "Invalid name \"" + SPropertyOperations.getString(globalDeclaration, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079234030983", null, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(versionConstant, "Invalid name \"" + SPropertyOperations.getString(versionConstant, PROPS.name$MnvL) + "\"", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079234030983", null, errorTarget);
         }
       }
       //  Check globals for unique names 
-      for (SNode sibling : SNodeOperations.getAllSiblings(globalDeclaration, false)) {
-        if (Objects.equals(SNodeOperations.getConcept(globalDeclaration), SNodeOperations.getConcept(sibling))) {
-          if (Objects.equals(SPropertyOperations.getString(globalDeclaration, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
+      for (SNode sibling : SNodeOperations.getAllSiblings(versionConstant, false)) {
+        if (Objects.equals(SNodeOperations.getConcept(versionConstant), SNodeOperations.getConcept(sibling))) {
+          if (Objects.equals(SPropertyOperations.getString(versionConstant, PROPS.name$MnvL), SPropertyOperations.getString(((SNode) sibling), PROPS.name$MnvL))) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
-              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(globalDeclaration, "Global constant with same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079226608990", null, errorTarget);
+              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(versionConstant, "Version constant with same name", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "8863428079226608990", null, errorTarget);
             }
           }
         }
       }
       // Check if global is referenced
       boolean referenced = false;
-      for (SNode reference : SNodeOperations.getNodeDescendants(drawInterface, CONCEPTS.StringValueReference$SJ, false, new SAbstractConcept[]{})) {
-        if (Objects.equals(SLinkOperations.getTarget(reference, LINKS.value$4E$k), globalDeclaration)) {
+      for (SNode reference : SNodeOperations.getNodeDescendants(commandListVersion, CONCEPTS.StringValueReference$SJ, false, new SAbstractConcept[]{})) {
+        if (Objects.equals(SLinkOperations.getTarget(reference, LINKS.value$4E$k), versionConstant)) {
           referenced = true;
           break;
         }
@@ -58,17 +58,17 @@ public class CheckDrawInterface_NonTypesystemRule extends AbstractNonTypesystemR
       if (!(referenced)) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(globalDeclaration, "Global not referenced ", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "6494658016071533738", null, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(versionConstant, "Version constant not referenced ", "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "6494658016071533738", null, errorTarget);
         }
       }
     }
     // Check that versions are unique
-    for (SNode sibling : SNodeOperations.getAllSiblings(drawInterface, false)) {
-      if (Objects.equals(SNodeOperations.getConcept(drawInterface), SNodeOperations.getConcept(sibling))) {
-        if (Objects.equals(SPropertyOperations.getInteger(drawInterface, PROPS.version$$d0n), SPropertyOperations.getInteger(((SNode) sibling), PROPS.version$$d0n))) {
+    for (SNode sibling : SNodeOperations.getAllSiblings(commandListVersion, false)) {
+      if (Objects.equals(SNodeOperations.getConcept(commandListVersion), SNodeOperations.getConcept(sibling))) {
+        if (Objects.equals(SPropertyOperations.getInteger(commandListVersion, PROPS.version$$d0n), SPropertyOperations.getInteger(((SNode) sibling), PROPS.version$$d0n))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(drawInterface, "Duplicate version " + SPropertyOperations.getInteger(drawInterface, PROPS.version$$d0n), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "2460582428491538814", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(commandListVersion, "Duplicate version " + SPropertyOperations.getInteger(commandListVersion, PROPS.version$$d0n), "r:17f4d462-c675-4762-86e4-94a0f91797ba(ClientCommands.typesystem)", "2460582428491538814", null, errorTarget);
           }
         }
       }
@@ -91,7 +91,7 @@ public class CheckDrawInterface_NonTypesystemRule extends AbstractNonTypesystemR
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink value$4E$k = MetaAdapterFactory.getReferenceLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fc158adL, 0x2615a4c93fc158aeL, "value");
-    /*package*/ static final SContainmentLink versionGlobals$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionGlobals");
+    /*package*/ static final SContainmentLink versionConstants$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionConstants");
   }
 
   private static final class CONCEPTS {

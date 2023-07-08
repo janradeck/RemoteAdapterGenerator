@@ -158,9 +158,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new versionGlobalsListHandler_dklcy6_h0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new versionConstantsListHandler_dklcy6_h0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_versionGlobals");
+    editorCell.setCellId("refNodeList_versionConstants");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
@@ -169,11 +169,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class versionGlobalsListHandler_dklcy6_h0 extends RefNodeListHandler {
+  private static class versionConstantsListHandler_dklcy6_h0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public versionGlobalsListHandler_dklcy6_h0(SNode ownerNode, EditorContext context) {
+    public versionConstantsListHandler_dklcy6_h0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -183,7 +183,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.versionGlobals$GQ7p;
+      return LINKS.versionConstants$GQ7p;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.StringConstant$Tg;
@@ -196,7 +196,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(versionGlobalsListHandler_dklcy6_h0.this.getNode(), LINKS.versionGlobals$GQ7p));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(versionConstantsListHandler_dklcy6_h0.this.getNode(), LINKS.versionConstants$GQ7p));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -335,7 +335,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink versionGlobals$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionGlobals");
+    /*package*/ static final SContainmentLink versionConstants$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionConstants");
     /*package*/ static final SContainmentLink versionCommands$zQfQ = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fb9ae26L, "versionCommands");
   }
 }

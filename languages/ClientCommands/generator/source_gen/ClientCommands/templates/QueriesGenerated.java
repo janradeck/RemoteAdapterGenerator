@@ -108,7 +108,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.commandPool$bUkP);
   }
   public static Iterable<SNode> sourceNodesQuery_1_1(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.versionGlobals$GQ7p);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.versionConstants$GQ7p);
   }
   public static Iterable<SNode> sourceNodesQuery_1_2(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.commandPool$bUkP);
@@ -358,7 +358,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink path$EoLk = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb978a0L, 0x2615a4c93fc158b9L, "path");
     /*package*/ static final SContainmentLink style$Epun = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb978a0L, 0x2615a4c93fc158bcL, "style");
     /*package*/ static final SContainmentLink commandPool$bUkP = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x7fc1c94250b16ef7L, 0x7fc1c94250b2a372L, "commandPool");
-    /*package*/ static final SContainmentLink versionGlobals$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionGlobals");
+    /*package*/ static final SContainmentLink versionConstants$GQ7p = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fbdb671L, "versionConstants");
     /*package*/ static final SContainmentLink versionCommands$zQfQ = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb84420L, 0x2615a4c93fb9ae26L, "versionCommands");
     /*package*/ static final SContainmentLink commandConstants$4IsL = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fb9ae43L, "commandConstants");
     /*package*/ static final SContainmentLink commandParameters$l9Sr = MetaAdapterFactory.getContainmentLink(0x803175666604ec4L, 0x9045cc3f1cabfba1L, 0x2615a4c93fb9ae0eL, 0x2615a4c93fbcac0cL, "commandParameters");

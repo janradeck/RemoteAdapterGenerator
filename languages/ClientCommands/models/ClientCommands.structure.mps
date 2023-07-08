@@ -53,7 +53,7 @@
     <node concept="1TJgyj" id="2olDc$ZJrpL" role="1TKVEi">
       <property role="IQ2ns" value="2744280732216964721" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="versionGlobals" />
+      <property role="20kJfa" value="versionConstants" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2olDc$ZIqSj" resolve="StringConstant" />
     </node>
@@ -68,6 +68,9 @@
       <property role="IQ2nx" value="2744280732216700488" />
       <property role="TrG5h" value="version" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="3H_6mwSOtnU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2olDc$ZInyt">
