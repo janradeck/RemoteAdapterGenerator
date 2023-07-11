@@ -54,7 +54,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return (String) ClientCommand__BehaviorDescriptor.commandURL_id7Z1Mk9h1V8T.invoke(_context.getNode());
   }
   public static Object propertyMacro_GetValue_1_3(final PropertyMacroContext _context) {
-    return "Command " + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + " okay";
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.value$4hpg);
@@ -240,7 +240,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("9205860399986377433", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "interfaceConst"));
     pvqMethods.put("9205860399986368825", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "interfaceConst"));
     pvqMethods.put("9205860399986582981", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "commandURL"));
-    pvqMethods.put("2744280732220615884", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Example okay"));
+    pvqMethods.put("941963254561292601", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "Command"));
     pvqMethods.put("2744280732223146899", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "localConst"));
     pvqMethods.put("2744280732223141398", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "localConst"));
     pvqMethods.put("2744280732222660869", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "param"));

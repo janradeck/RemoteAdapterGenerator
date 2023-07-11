@@ -2,35 +2,35 @@
 <model ref="r:75fb25f4-a6a0-4281-952e-fd1b745661f9(ClientCommands.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="08031756-6660-4ec4-9045-cc3f1cabfba1" name="SvgCommands" version="0" />
+    <use id="08031756-6660-4ec4-9045-cc3f1cabfba1" name="ClientCommands" version="0" />
   </languages>
   <imports />
   <registry>
-    <language id="08031756-6660-4ec4-9045-cc3f1cabfba1" name="SvgCommands">
-      <concept id="2744280732216700480" name="SvgCommands.structure.ServerCommandClearCanvas" flags="ng" index="pF0E9" />
-      <concept id="2744280732216700430" name="SvgCommands.structure.ClientCommand" flags="ng" index="pF0F7">
+    <language id="08031756-6660-4ec4-9045-cc3f1cabfba1" name="ClientCommands">
+      <concept id="2744280732216700480" name="ClientCommands.structure.ServerCommandClearCanvas" flags="ng" index="pF0E9" />
+      <concept id="2744280732216700430" name="ClientCommands.structure.ClientCommand" flags="ng" index="pF0F7">
         <child id="2744280732216896524" name="commandParameters" index="pEgz5" />
         <child id="2744280732216700483" name="commandConstants" index="pF0Ea" />
         <child id="2744280732216700485" name="serverCommands" index="pF0Ec" />
       </concept>
-      <concept id="2744280732216700435" name="SvgCommands.structure.StringConstant" flags="ng" index="pF0Fq">
+      <concept id="2744280732216700435" name="ClientCommands.structure.StringConstant" flags="ng" index="pF0Fq">
         <property id="2744280732216700443" name="value" index="pF0Fi" />
       </concept>
-      <concept id="2744280732216700436" name="SvgCommands.structure.StringParameter" flags="ng" index="pF0Ft" />
-      <concept id="2744280732216686752" name="SvgCommands.structure.ServerCommandDrawPath" flags="ng" index="pFdLD">
+      <concept id="2744280732216700436" name="ClientCommands.structure.StringParameter" flags="ng" index="pF0Ft" />
+      <concept id="2744280732216686752" name="ClientCommands.structure.ServerCommandDrawPath" flags="ng" index="pFdLD">
         <child id="2744280732217202873" name="path" index="pPfLK" />
         <child id="2744280732217202876" name="style" index="pPfLP" />
         <child id="2744280732217202864" name="message" index="pPfLT" />
       </concept>
-      <concept id="2744280732216607776" name="SvgCommands.structure.CommandListVersion" flags="ng" index="pFu3D">
+      <concept id="2744280732216607776" name="ClientCommands.structure.CommandListVersion" flags="ng" index="pFu3D">
         <property id="2744280732216700488" name="version" index="pF0E1" />
-        <child id="2744280732216964721" name="versionGlobals" index="pE1aS" />
+        <child id="2744280732216964721" name="versionConstants" index="pE1aS" />
         <child id="2744280732216700454" name="versionCommands" index="pF0FJ" />
       </concept>
-      <concept id="2744280732217202861" name="SvgCommands.structure.StringValueReference" flags="ng" index="pPfL$">
+      <concept id="2744280732217202861" name="ClientCommands.structure.StringValueReference" flags="ng" index="pPfL$">
         <reference id="2744280732217202862" name="value" index="pPfLB" />
       </concept>
-      <concept id="9205860399980834551" name="SvgCommands.structure.CommandVersionPool" flags="ng" index="JsauP">
+      <concept id="9205860399980834551" name="ClientCommands.structure.CommandVersionPool" flags="ng" index="JsauP">
         <child id="9205860399980913522" name="commandPool" index="JsQCK" />
       </concept>
     </language>
@@ -177,10 +177,6 @@
     <property role="TrG5h" value="SvgDrawer" />
     <node concept="pFu3D" id="7G1ee2EOL8I" role="JsQCK">
       <property role="pF0E1" value="1" />
-      <node concept="pF0Fq" id="7G1ee2EOL8O" role="pE1aS">
-        <property role="TrG5h" value="styleGreen" />
-        <property role="pF0Fi" value="fill:none;stroke:#00FF00" />
-      </node>
       <node concept="pF0Fq" id="7G1ee2EOL8P" role="pE1aS">
         <property role="TrG5h" value="styleBlue" />
         <property role="pF0Fi" value="fill:none;stroke:#0000FF" />
@@ -197,23 +193,26 @@
         <property role="TrG5h" value="styleGrey" />
         <property role="pF0Fi" value="fill:none;stroke:#7F7F7F" />
       </node>
-      <node concept="pF0F7" id="7G1ee2EOL8J" role="pF0FJ">
-        <property role="TrG5h" value="drawGreen" />
-        <node concept="pF0Ft" id="7G1ee2EOL8U" role="pEgz5">
+      <node concept="pF0F7" id="7G1ee2EXEtj" role="pF0FJ">
+        <property role="TrG5h" value="draw" />
+        <node concept="pF0Ft" id="7G1ee2EXEtW" role="pEgz5">
           <property role="TrG5h" value="message" />
         </node>
-        <node concept="pF0Ft" id="7G1ee2EOL8V" role="pEgz5">
+        <node concept="pF0Ft" id="7G1ee2EXEtY" role="pEgz5">
           <property role="TrG5h" value="path" />
         </node>
-        <node concept="pFdLD" id="7G1ee2EOL9E" role="pF0Ec">
-          <node concept="pPfL$" id="7G1ee2EOL9G" role="pPfLT">
-            <ref role="pPfLB" node="7G1ee2EOL8U" resolve="message" />
+        <node concept="pF0Ft" id="7G1ee2EXEu1" role="pEgz5">
+          <property role="TrG5h" value="style" />
+        </node>
+        <node concept="pFdLD" id="7G1ee2EXEu5" role="pF0Ec">
+          <node concept="pPfL$" id="7G1ee2EXEu7" role="pPfLT">
+            <ref role="pPfLB" node="7G1ee2EXEtW" resolve="message" />
           </node>
-          <node concept="pPfL$" id="7G1ee2EOL9I" role="pPfLK">
-            <ref role="pPfLB" node="7G1ee2EOL8V" resolve="path" />
+          <node concept="pPfL$" id="7G1ee2EXEu9" role="pPfLK">
+            <ref role="pPfLB" node="7G1ee2EXEtY" resolve="path" />
           </node>
-          <node concept="pPfL$" id="7G1ee2EOL9K" role="pPfLP">
-            <ref role="pPfLB" node="7G1ee2EOL8O" resolve="styleGreen" />
+          <node concept="pPfL$" id="7G1ee2EXEub" role="pPfLP">
+            <ref role="pPfLB" node="7G1ee2EXEu1" resolve="style" />
           </node>
         </node>
       </node>
@@ -234,6 +233,30 @@
           </node>
           <node concept="pPfL$" id="7G1ee2EOLba" role="pPfLP">
             <ref role="pPfLB" node="7G1ee2EOL8P" resolve="styleBlue" />
+          </node>
+        </node>
+      </node>
+      <node concept="pF0F7" id="7G1ee2EOL8J" role="pF0FJ">
+        <property role="TrG5h" value="drawGreen" />
+        <node concept="pF0Fq" id="7G1ee2EOL8O" role="pF0Ea">
+          <property role="TrG5h" value="styleGreen" />
+          <property role="pF0Fi" value="fill:none;stroke:#00FF00" />
+        </node>
+        <node concept="pF0Ft" id="7G1ee2EOL8U" role="pEgz5">
+          <property role="TrG5h" value="message" />
+        </node>
+        <node concept="pF0Ft" id="7G1ee2EOL8V" role="pEgz5">
+          <property role="TrG5h" value="path" />
+        </node>
+        <node concept="pFdLD" id="7G1ee2EOL9E" role="pF0Ec">
+          <node concept="pPfL$" id="7G1ee2EOL9G" role="pPfLT">
+            <ref role="pPfLB" node="7G1ee2EOL8U" resolve="message" />
+          </node>
+          <node concept="pPfL$" id="7G1ee2EOL9I" role="pPfLK">
+            <ref role="pPfLB" node="7G1ee2EOL8V" resolve="path" />
+          </node>
+          <node concept="pPfL$" id="7G1ee2EOL9K" role="pPfLP">
+            <ref role="pPfLB" node="7G1ee2EOL8O" resolve="styleGreen" />
           </node>
         </node>
       </node>
@@ -294,29 +317,6 @@
           </node>
           <node concept="pPfL$" id="7G1ee2EOLdm" role="pPfLP">
             <ref role="pPfLB" node="7G1ee2EOLcq" resolve="styleGrey" />
-          </node>
-        </node>
-      </node>
-      <node concept="pF0F7" id="7G1ee2EXEtj" role="pF0FJ">
-        <property role="TrG5h" value="draw" />
-        <node concept="pF0Ft" id="7G1ee2EXEtW" role="pEgz5">
-          <property role="TrG5h" value="message" />
-        </node>
-        <node concept="pF0Ft" id="7G1ee2EXEtY" role="pEgz5">
-          <property role="TrG5h" value="path" />
-        </node>
-        <node concept="pF0Ft" id="7G1ee2EXEu1" role="pEgz5">
-          <property role="TrG5h" value="style" />
-        </node>
-        <node concept="pFdLD" id="7G1ee2EXEu5" role="pF0Ec">
-          <node concept="pPfL$" id="7G1ee2EXEu7" role="pPfLT">
-            <ref role="pPfLB" node="7G1ee2EXEtW" resolve="message" />
-          </node>
-          <node concept="pPfL$" id="7G1ee2EXEu9" role="pPfLK">
-            <ref role="pPfLB" node="7G1ee2EXEtY" resolve="path" />
-          </node>
-          <node concept="pPfL$" id="7G1ee2EXEub" role="pPfLP">
-            <ref role="pPfLB" node="7G1ee2EXEu1" resolve="name" />
           </node>
         </node>
       </node>

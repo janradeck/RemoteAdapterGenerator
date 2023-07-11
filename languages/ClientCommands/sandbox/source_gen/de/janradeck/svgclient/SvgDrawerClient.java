@@ -9,14 +9,21 @@ public class SvgDrawerClient {
     this.factory = factory;
   }
 
-  public void drawGreen(String message, String path) {
-    QueryGenerator query = factory.getQueryGenerator("/drawGreen");
+  public void draw(String message, String path, String style) {
+    QueryGenerator query = factory.getQueryGenerator("/draw");
     query.addParameter("message", message);
     query.addParameter("path", path);
+    query.addParameter("style", style);
     query.executeGetQuery();
   }
   public void drawBlue(String message, String path) {
     QueryGenerator query = factory.getQueryGenerator("/drawBlue");
+    query.addParameter("message", message);
+    query.addParameter("path", path);
+    query.executeGetQuery();
+  }
+  public void drawGreen(String message, String path) {
+    QueryGenerator query = factory.getQueryGenerator("/drawGreen");
     query.addParameter("message", message);
     query.addParameter("path", path);
     query.executeGetQuery();
@@ -37,13 +44,6 @@ public class SvgDrawerClient {
     QueryGenerator query = factory.getQueryGenerator("/drawGrey");
     query.addParameter("message", message);
     query.addParameter("path", path);
-    query.executeGetQuery();
-  }
-  public void draw(String message, String path, String style) {
-    QueryGenerator query = factory.getQueryGenerator("/draw");
-    query.addParameter("message", message);
-    query.addParameter("path", path);
-    query.addParameter("style", style);
     query.executeGetQuery();
   }
   public void clear() {

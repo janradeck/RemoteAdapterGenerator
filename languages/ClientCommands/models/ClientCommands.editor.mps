@@ -133,7 +133,7 @@
     <node concept="3EZMnI" id="2olDc$ZIr2e" role="2wV5jI">
       <node concept="3F0ifn" id="2olDc$ZK4T6" role="3EZMnx" />
       <node concept="3F0ifn" id="2olDc$ZIr2o" role="3EZMnx">
-        <property role="3F0ifm" value="Command" />
+        <property role="3F0ifm" value="Client command" />
         <node concept="pVoyu" id="2olDc$ZK4Ty" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -205,7 +205,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="2olDc$ZIr3W" role="3EZMnx">
-        <property role="3F0ifm" value="Execute" />
+        <property role="3F0ifm" value="Server commands" />
         <node concept="pVoyu" id="2olDc$ZIr4_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -230,7 +230,7 @@
     <node concept="3EZMnI" id="2olDc$ZIED5" role="2wV5jI">
       <node concept="3F0ifn" id="6d4zfB99W7f" role="3EZMnx" />
       <node concept="3F0ifn" id="2olDc$ZIEDf" role="3EZMnx">
-        <property role="3F0ifm" value="Interface" />
+        <property role="3F0ifm" value="CommandListVersion" />
         <node concept="Vb9p2" id="7Z1Mk9gZcsp" role="3F10Kt">
           <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
@@ -304,7 +304,7 @@
     <ref role="1XX52x" to="1nxb:7Z1Mk9gGmVR" resolve="CommandVersionPool" />
     <node concept="3EZMnI" id="7Z1Mk9gUae9" role="2wV5jI">
       <node concept="3F0ifn" id="7Z1Mk9gUaej" role="3EZMnx">
-        <property role="3F0ifm" value="Interface collection" />
+        <property role="3F0ifm" value="Command version pool" />
         <node concept="VSNWy" id="7Z1Mk9gUaeI" role="3F10Kt">
           <property role="1lJzqX" value="16" />
         </node>

@@ -52,12 +52,12 @@ public class testServer {
     public DrawGreenV1Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawGreen okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleGreenV1);
     }
 
@@ -66,13 +66,13 @@ public class testServer {
     public DrawBlackV1Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawBlack okay";
       communication.setStatus(200);
       communication.reply(response);
       String styleBlackV1 = new String("000000");
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleBlackV1);
     }
 
@@ -81,7 +81,7 @@ public class testServer {
     public ClearV1Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command clear okay";
       communication.setStatus(200);
       communication.reply(response);
@@ -93,7 +93,7 @@ public class testServer {
     public DrawRectV1Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawRect okay";
       communication.setStatus(200);
       communication.reply(response);
@@ -105,7 +105,7 @@ public class testServer {
     public SimpleDrawV1Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command simpleDraw okay";
       communication.setStatus(200);
       communication.reply(response);
@@ -118,12 +118,12 @@ public class testServer {
     public DrawLightBlueV2Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawLightBlue okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleBlueV2);
     }
 
@@ -132,7 +132,7 @@ public class testServer {
     public ClearV2Handler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command clear okay";
       communication.setStatus(200);
       communication.reply(response);

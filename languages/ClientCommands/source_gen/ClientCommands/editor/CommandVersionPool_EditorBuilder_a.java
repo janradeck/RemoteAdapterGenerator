@@ -69,7 +69,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Interface collection");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Command version pool");
     editorCell.setCellId("Constant_31lk9d_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_SIZE, 16);

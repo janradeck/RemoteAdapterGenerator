@@ -4,7 +4,6 @@ package de.janradeck.svghttpd;
 
 
 public class SvgDrawerServer {
-  private static final String styleGreen = "fill:none;stroke:#00FF00";
   private static final String styleBlue = "fill:none;stroke:#0000FF";
   private static final String styleRed = "fill:none;stroke:#FF0000";
   private static final String styleBlack = "fill:none;stroke:#000000";
@@ -14,12 +13,12 @@ public class SvgDrawerServer {
 
   public SvgDrawerServer(SvgApplication application, InjectionFactoryServer factory) {
     server = factory.getServer();
-    server.addHandler("/drawGreen", new DrawGreenHandler(application, server));
+    server.addHandler("/draw", new DrawHandler(application, server));
     server.addHandler("/drawBlue", new DrawBlueHandler(application, server));
+    server.addHandler("/drawGreen", new DrawGreenHandler(application, server));
     server.addHandler("/drawRed", new DrawRedHandler(application, server));
     server.addHandler("/drawBlack", new DrawBlackHandler(application, server));
     server.addHandler("/drawGrey", new DrawGreyHandler(application, server));
-    server.addHandler("/draw", new DrawHandler(application, server));
     server.addHandler("/clear", new ClearHandler(application, server));
     // Register a handler to close the application via the http interface
     server.addHandler("/close", new CloseHandler(application, server));
@@ -48,17 +47,18 @@ public class SvgDrawerServer {
   }
 
 
-  private class DrawGreenHandler extends RequestHandlerClass {
-    public DrawGreenHandler(SvgApplication application, CommunicationServer server) {
+  private class DrawHandler extends RequestHandlerClass {
+    public DrawHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
-      String response = "Command drawGreen okay";
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
+      String response = "Command draw okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
-      application.draw(message, path, styleGreen);
+      String message = params.get("message");
+      String path = params.get("path");
+      String style = params.get("style");
+      application.draw(message, path, style);
     }
 
   }
@@ -66,13 +66,28 @@ public class SvgDrawerServer {
     public DrawBlueHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawBlue okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleBlue);
+    }
+
+  }
+  private class DrawGreenHandler extends RequestHandlerClass {
+    public DrawGreenHandler(SvgApplication application, CommunicationServer server) {
+      super(application, server);
+    }
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
+      String response = "Command drawGreen okay";
+      communication.setStatus(200);
+      communication.reply(response);
+      String styleGreen = new String("fill:none;stroke:#00FF00");
+      String message = params.get("message");
+      String path = params.get("path");
+      application.draw(message, path, styleGreen);
     }
 
   }
@@ -80,12 +95,12 @@ public class SvgDrawerServer {
     public DrawRedHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawRed okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleRed);
     }
 
@@ -94,12 +109,12 @@ public class SvgDrawerServer {
     public DrawBlackHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawBlack okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleBlack);
     }
 
@@ -108,28 +123,13 @@ public class SvgDrawerServer {
     public DrawGreyHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command drawGrey okay";
       communication.setStatus(200);
       communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
+      String message = params.get("message");
+      String path = params.get("path");
       application.draw(message, path, styleGrey);
-    }
-
-  }
-  private class DrawHandler extends RequestHandlerClass {
-    public DrawHandler(SvgApplication application, CommunicationServer server) {
-      super(application, server);
-    }
-    public void executeHandler(Communication communication,  params,  application) {
-      String response = "Command draw okay";
-      communication.setStatus(200);
-      communication.reply(response);
-      String message = params.???("message");
-      String path = params.???("path");
-      String style = params.???("style");
-      application.draw(message, path, style);
     }
 
   }
@@ -137,7 +137,7 @@ public class SvgDrawerServer {
     public ClearHandler(SvgApplication application, CommunicationServer server) {
       super(application, server);
     }
-    public void executeHandler(Communication communication,  params,  application) {
+    public void executeHandler(Communication communication, Parameters params, SvgApplication application) {
       String response = "Command clear okay";
       communication.setStatus(200);
       communication.reply(response);

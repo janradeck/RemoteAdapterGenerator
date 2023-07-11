@@ -84,7 +84,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Command");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Client command");
     editorCell.setCellId("Constant_mrq5t2_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -326,7 +326,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_7() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Execute");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Server commands");
     editorCell.setCellId("Constant_mrq5t2_k0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
