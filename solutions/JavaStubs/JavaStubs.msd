@@ -4,10 +4,10 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/svgclient-1.0-interface.jar!/" type="java_classes">
+    <modelRoot contentPath="${module}/svgclient-interface-1.0.jar!/" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
-    <modelRoot contentPath="${module}/svghttpd-1.0-interface.jar!/" type="java_classes">
+    <modelRoot contentPath="${module}/svghttpd-interface-1.0.jar!/" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>
@@ -16,6 +16,10 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/svgclient-interface-1.0.jar" />
+    <stubModelEntry path="${module}/svghttpd-interface-1.0.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

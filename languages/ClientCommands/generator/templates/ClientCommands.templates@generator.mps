@@ -6,17 +6,18 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <engage id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" />
-    <engage id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="rjok" ref="5aba602d-bf7b-47f5-add9-938c942bd9e2/java:de.janradeck.svghttpd(JavaStubs/)" />
-    <import index="s6rn" ref="5aba602d-bf7b-47f5-add9-938c942bd9e2/java:de.janradeck.svgclient(JavaStubs/)" />
+    <import index="rjok" ref="9dc4a82e-5b05-4550-b576-de4099846575/java:de.janradeck.svghttpd(ClientCommands/)" />
+    <import index="s6rn" ref="9dc4a82e-5b05-4550-b576-de4099846575/java:de.janradeck.svgclient(ClientCommands/)" />
     <import index="1nxb" ref="r:7c9c9d02-de44-4a02-9f18-27528ededf0d(ClientCommands.structure)" implicit="true" />
     <import index="oank" ref="r:fc65f0b7-36e1-4742-885d-350b7bf8470e(ClientCommands.behavior)" implicit="true" />
+    <import index="rjol" ref="5aba602d-bf7b-47f5-add9-938c942bd9e2/java:de.janradeck.svghttpd(JavaStubs/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="s6ro" ref="5aba602d-bf7b-47f5-add9-938c942bd9e2/java:de.janradeck.svgclient(JavaStubs/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -55,6 +56,7 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -360,7 +362,7 @@
               <ref role="3cqZAo" node="4sRvlpUKSNC" resolve="server" />
             </node>
             <node concept="liA8E" id="7Z1Mk9h2afW" role="2OqNvi">
-              <ref role="37wK5l" to="rjok:~CommunicationServer.addHandler(java.lang.String,de.janradeck.svghttpd.RequestHandlerClass)" resolve="addHandler" />
+              <ref role="37wK5l" to="rjol:~CommunicationServer.addHandler(java.lang.String,de.janradeck.svghttpd.RequestHandler)" resolve="addHandler" />
               <node concept="Xl_RD" id="7Z1Mk9h2auT" role="37wK5m">
                 <property role="Xl_RC" value="commandURL" />
                 <node concept="17Uvod" id="7Z1Mk9h2in5" role="lGtFl">
@@ -490,7 +492,7 @@
               <ref role="3cqZAo" node="4sRvlpUKSNC" resolve="server" />
             </node>
             <node concept="liA8E" id="7G1ee2ETOQP" role="2OqNvi">
-              <ref role="37wK5l" to="rjok:~CommunicationServer.addHandler(java.lang.String,de.janradeck.svghttpd.RequestHandlerClass)" resolve="addHandler" />
+              <ref role="37wK5l" to="rjok:~CommunicationServer.addHandler(java.lang.String,de.janradeck.svghttpd.RequestHandler)" resolve="addHandler" />
               <node concept="Xl_RD" id="4nScwrOvjTx" role="37wK5m">
                 <property role="Xl_RC" value="/close" />
               </node>
@@ -571,7 +573,7 @@
         <node concept="3Tm1VV" id="7G1ee2ESJKc" role="1B3o_S" />
         <node concept="3clFbS" id="7G1ee2ESJKd" role="3clF47">
           <node concept="XkiVB" id="5CxEgSLQPI8" role="3cqZAp">
-            <ref role="37wK5l" to="rjok:~RequestHandlerClass.&lt;init&gt;(de.janradeck.svghttpd.SvgApplication,de.janradeck.svghttpd.CommunicationServer)" resolve="RequestHandlerClass" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <node concept="37vLTw" id="5CxEgSLQQff" role="37wK5m">
               <ref role="3cqZAo" node="5CxEgSLQNRE" resolve="application" />
             </node>
@@ -691,7 +693,7 @@
           <node concept="3clFbF" id="5CxEgSLR6s9" role="3cqZAp">
             <node concept="2OqwBi" id="5CxEgSLR7bX" role="3clFbG">
               <node concept="37vLTw" id="5CxEgSLR6s6" role="2Oq$k0">
-                <ref role="3cqZAo" to="rjok:~RequestHandlerClass.server" resolve="server" />
+                <ref role="3cqZAo" node="4sRvlpUKSNC" resolve="server" />
               </node>
               <node concept="liA8E" id="5CxEgSLR7Id" role="2OqNvi">
                 <ref role="37wK5l" to="rjok:~CommunicationServer.stop(int)" resolve="stop" />
@@ -734,15 +736,15 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="4nScwrOwyqH" role="1B3o_S" />
-      <node concept="3uibUv" id="3nQQjNgUebs" role="1zkMxy">
-        <ref role="3uigEE" to="rjok:~RequestHandlerClass" resolve="RequestHandlerClass" />
-      </node>
       <node concept="3UR2Jj" id="OixDrrxYEp" role="lGtFl">
         <node concept="TZ5HA" id="OixDrrxYEq" role="TZ5H$">
           <node concept="1dT_AC" id="OixDrrxYEr" role="1dT_Ay">
             <property role="1dT_AB" value="The RequestHandler for closing the application" />
           </node>
         </node>
+      </node>
+      <node concept="3uibUv" id="2O6zPaP1_Y1" role="EKbjA">
+        <ref role="3uigEE" to="rjok:~RequestHandler" resolve="RequestHandler" />
       </node>
     </node>
     <node concept="2tJIrI" id="4nScwrOww0a" role="jymVt" />
@@ -754,7 +756,7 @@
         <node concept="3Tm1VV" id="2olDc_02n4I" role="1B3o_S" />
         <node concept="3clFbS" id="2olDc_02n4J" role="3clF47">
           <node concept="XkiVB" id="3nQQjNgUiGj" role="3cqZAp">
-            <ref role="37wK5l" to="rjok:~RequestHandlerClass.&lt;init&gt;(de.janradeck.svghttpd.SvgApplication,de.janradeck.svghttpd.CommunicationServer)" resolve="RequestHandlerClass" />
+            <ref role="37wK5l" to="rjol:~RequestHandlerClass.&lt;init&gt;(de.janradeck.svghttpd.SvgApplication,de.janradeck.svghttpd.CommunicationServer)" resolve="RequestHandlerClass" />
             <node concept="37vLTw" id="3nQQjNgUiVq" role="37wK5m">
               <ref role="3cqZAo" node="2olDc_02nNn" resolve="application" />
             </node>
@@ -766,13 +768,13 @@
         <node concept="37vLTG" id="2olDc_02nNn" role="3clF46">
           <property role="TrG5h" value="application" />
           <node concept="3uibUv" id="2olDc_02nNm" role="1tU5fm">
-            <ref role="3uigEE" to="rjok:~SvgApplication" resolve="SvgApplication" />
+            <ref role="3uigEE" to="rjol:~SvgApplication" resolve="SvgApplication" />
           </node>
         </node>
         <node concept="37vLTG" id="5CxEgSLRjJW" role="3clF46">
           <property role="TrG5h" value="server" />
           <node concept="3uibUv" id="5CxEgSLRjZK" role="1tU5fm">
-            <ref role="3uigEE" to="rjok:~CommunicationServer" resolve="CommunicationServer" />
+            <ref role="3uigEE" to="rjol:~CommunicationServer" resolve="CommunicationServer" />
           </node>
         </node>
       </node>
@@ -792,7 +794,7 @@
                 <ref role="3cqZAo" node="5CxEgSLRvem" resolve="communication" />
               </node>
               <node concept="liA8E" id="OixDrrA80t" role="2OqNvi">
-                <ref role="37wK5l" to="rjok:~Communication.reply(int,java.lang.String)" resolve="reply" />
+                <ref role="37wK5l" to="rjol:~Communication.reply(int,java.lang.String)" resolve="reply" />
                 <node concept="37vLTw" id="OixDrrA8tx" role="37wK5m">
                   <ref role="3cqZAo" node="OixDrruBIz" resolve="HTTP_RESULT_OKAY" />
                 </node>
@@ -904,7 +906,7 @@
                   <ref role="3cqZAo" node="5CxEgSLRwvg" resolve="params" />
                 </node>
                 <node concept="liA8E" id="2olDc_04Pms" role="2OqNvi">
-                  <ref role="37wK5l" to="rjok:~Parameters.get(java.lang.String)" resolve="get" />
+                  <ref role="37wK5l" to="rjol:~Parameters.get(java.lang.String)" resolve="get" />
                   <node concept="Xl_RD" id="2olDc_04PEa" role="37wK5m">
                     <property role="Xl_RC" value="param" />
                     <node concept="17Uvod" id="2olDc_05a45" role="lGtFl">
@@ -966,7 +968,7 @@
                     <ref role="3cqZAo" node="5CxEgSLS$vb" resolve="application" />
                   </node>
                   <node concept="liA8E" id="2olDc_02sDL" role="2OqNvi">
-                    <ref role="37wK5l" to="rjok:~SvgApplication.draw(java.lang.String,java.lang.String,java.lang.String)" resolve="draw" />
+                    <ref role="37wK5l" to="rjol:~SvgApplication.draw(java.lang.String,java.lang.String,java.lang.String)" resolve="draw" />
                     <node concept="37vLTw" id="4sRvlpUNoLr" role="37wK5m">
                       <ref role="3cqZAo" node="2olDc_04RFu" resolve="localConst" />
                     </node>
@@ -1002,19 +1004,19 @@
         <node concept="37vLTG" id="5CxEgSLRvem" role="3clF46">
           <property role="TrG5h" value="communication" />
           <node concept="3uibUv" id="5CxEgSLRvel" role="1tU5fm">
-            <ref role="3uigEE" to="rjok:~Communication" resolve="Communication" />
+            <ref role="3uigEE" to="rjol:~Communication" resolve="Communication" />
           </node>
         </node>
         <node concept="37vLTG" id="5CxEgSLRwvg" role="3clF46">
           <property role="TrG5h" value="params" />
           <node concept="3uibUv" id="5CxEgSLRwZ9" role="1tU5fm">
-            <ref role="3uigEE" to="rjok:~Parameters" resolve="Parameters" />
+            <ref role="3uigEE" to="rjol:~Parameters" resolve="Parameters" />
           </node>
         </node>
         <node concept="37vLTG" id="5CxEgSLS$vb" role="3clF46">
           <property role="TrG5h" value="application" />
           <node concept="3uibUv" id="5CxEgSLS_7x" role="1tU5fm">
-            <ref role="3uigEE" to="rjok:~SvgApplication" resolve="SvgApplication" />
+            <ref role="3uigEE" to="rjol:~SvgApplication" resolve="SvgApplication" />
           </node>
         </node>
       </node>
@@ -1063,7 +1065,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="3nQQjNgUgWV" role="1zkMxy">
-        <ref role="3uigEE" to="rjok:~RequestHandlerClass" resolve="RequestHandlerClass" />
+        <ref role="3uigEE" to="rjol:~RequestHandlerClass" resolve="RequestHandlerClass" />
       </node>
     </node>
     <node concept="2tJIrI" id="7G1ee2ESCG4" role="jymVt" />
@@ -1396,7 +1398,7 @@
                 <ref role="3cqZAo" node="4sRvlpUKEyY" resolve="factory" />
               </node>
               <node concept="liA8E" id="4sRvlpUKJuq" role="2OqNvi">
-                <ref role="37wK5l" to="s6rn:~InjectionFactoryClient.getQueryGenerator(java.lang.String)" resolve="getQueryGenerator" />
+                <ref role="37wK5l" to="s6ro:~InjectionFactoryClient.getQueryGenerator(java.lang.String)" resolve="getQueryGenerator" />
                 <node concept="Xl_RD" id="4sRvlpUKJH4" role="37wK5m">
                   <property role="Xl_RC" value="commandURL" />
                   <node concept="17Uvod" id="4sRvlpUKLvd" role="lGtFl">
@@ -1426,7 +1428,7 @@
               <ref role="3cqZAo" node="4sRvlpUKIcM" resolve="query" />
             </node>
             <node concept="liA8E" id="4sRvlpUKId6" role="2OqNvi">
-              <ref role="37wK5l" to="s6rn:~QueryGenerator.addParameter(java.lang.String,java.lang.String)" resolve="addParameter" />
+              <ref role="37wK5l" to="s6ro:~QueryGenerator.addParameter(java.lang.String,java.lang.String)" resolve="addParameter" />
               <node concept="Xl_RD" id="4sRvlpUKId7" role="37wK5m">
                 <property role="Xl_RC" value="parameter" />
                 <node concept="17Uvod" id="4sRvlpUKId8" role="lGtFl">
@@ -1488,7 +1490,7 @@
               <ref role="3cqZAo" node="4sRvlpUKIcM" resolve="query" />
             </node>
             <node concept="liA8E" id="OixDrrBgtt" role="2OqNvi">
-              <ref role="37wK5l" to="s6rn:~QueryGenerator.executeGetQuery()" resolve="executeGetQuery" />
+              <ref role="37wK5l" to="s6ro:~QueryGenerator.executeGetQuery()" resolve="executeGetQuery" />
             </node>
           </node>
         </node>

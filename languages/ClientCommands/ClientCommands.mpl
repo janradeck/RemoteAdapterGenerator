@@ -23,11 +23,15 @@
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
         </modelRoot>
-        <modelRoot contentPath="C:/Users/Jan/MPSProjects/DrawInterface/solutions/JavaStubs/svgclient-1.0-interface.jar!/" type="java_classes">
+        <modelRoot contentPath="C:/Users/Jan/MPSProjects/RemoteAdapterGenerator/solutions/JavaStubs/svgclient-interface-1.0.jar!/" type="java_classes">
           <sourceRoot location="." />
         </modelRoot>
-        <modelRoot contentPath="C:/Users/Jan/MPSProjects/DrawInterface/solutions/JavaStubs/svghttpd-1.0-interface.jar!/" type="java_classes">
+        <modelRoot contentPath="C:/Users/Jan/MPSProjects/RemoteAdapterGenerator/solutions/JavaStubs/svghttpd-interface-1.0.jar!/" type="java_classes">
           <sourceRoot location="." />
+        </modelRoot>
+        <modelRoot contentPath="C:/Users/Jan/MPSProjects/RemoteAdapterGenerator/solutions/JavaStubs" type="java_classes">
+          <sourceRoot location="svgclient-interface-1.0.jar" />
+          <sourceRoot location="svghttpd-interface-1.0.jar" />
         </modelRoot>
       </models>
       <facets>
